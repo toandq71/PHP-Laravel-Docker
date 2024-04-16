@@ -31,4 +31,4 @@ jobs:
     #   run: composer run-script phpcs
 
     - name: Detecting PHP Code Standards Violations
-      run: ./vendor/bin/php-cs-fixer fix app
+      run: ./vendor/bin/php-cs-fixer fix app --dry-run
