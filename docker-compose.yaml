@@ -1,0 +1,64 @@
+services:
+  # PHP
+  web:
+    build:
+      context: ./docker
+      dockerfile: php-fpm/Dockerfile
+      args:
+        WWWGROUP: '${WWWGROUP}'
+        NODE_VERSION: '${NODE_VERSION}'
+        POSTGRES_VERSION: '${POSTGRES_VERSION:-15}'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    ports:
+      - '9000:9000'
+      - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
+    environment:
+      WWWUSER: '${WWWUSER}'
+      XDEBUG_MODE: '${XDEBUG_MODE:-off}'
+      XDEBUG_CONFIG: '${XDEBUG_CONFIG:-client_host=host.docker.internal}'
+    volumes:
+      - '.:/var/www/html'
+      - './docker/php-fpm/php.ini:/usr/local/etc/php/conf.d/local.ini'
+    networks:
+      - example_app_docker
+
+  # Nginx
+  nginx:
+    image: nginx:alpine
+    ports:
+      - '${APP_PORT:-80}:80'
+    volumes:
+      - '.:/var/www/html'
+      - './docker/nginx/nginx.conf:/etc/nginx/nginx.conf'
+    links:
+      - web
+    depends_on:
+      - web
+    networks:
+      - example_app_docker
+
+  # Mysql
+  mysql:
+    image: mysql:8.2
+    ports:
+      - '${FORWARD_DB_PORT:-3306}:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_USER: '${DB_USERNAME}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+    volumes:
+      - 'example_app_docker-mysql:/var/lib/mysql'
+      - './docker/mysql/create-testing-database.sh:/docker-entrypoint-initdb.d/10-create-testing-database.sh'
+    networks:
+      - example_app_docker
+
+networks:
+  example_app_docker:
+    driver: bridge
+
+volumes:
+  example_app_docker-mysql:
+    driver: local
