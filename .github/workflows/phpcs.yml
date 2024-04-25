@@ -27,6 +27,9 @@ jobs:
     - name: Make phpcs Executable
       run: chmod +x vendor/bin/phpcs
 
+    - name: Import Permission
+      run: composer run-script import_permission-cmd
+
     # - name: Detecting PHP Code Standards Violations
     #   run: composer run-script phpcs
 

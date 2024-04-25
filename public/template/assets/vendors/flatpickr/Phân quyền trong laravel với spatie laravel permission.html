@@ -1,0 +1,2703 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_8_tao_seeder_de_them_du_lieu_vao_bang -->
+<html lang="vi" style="transform: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta http-equiv="content-language" content="vi">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link href="https://hanhtinhcongnghe.com/" hreflang="vi" rel="alternate">
+    <link href="https://hanhtinhcongnghe.com/" hreflang="vi-vn" rel="alternate">
+	<meta name="robots" content="noodp,index,follow">
+	<meta content="hanhtinhcongnghe" name="Author" rel="author">
+
+	
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Phân quyền trong laravel với spatie laravel permission</title>
+<meta name="description" content="Trong laravel có hỗ trợ rất nhiều package phân quyền khác nhau, nhưng có lẽ phân quyền trong laravel bằng laravel permission là hoàn chỉnh nhất.">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Phân quyền trong laravel với spatie laravel permission">
+<meta property="og:description" content="Trong laravel có hỗ trợ rất nhiều package phân quyền khác nhau, nhưng có lẽ phân quyền trong laravel bằng laravel permission là hoàn chỉnh nhất.">
+<meta property="og:url" content="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/">
+<meta property="og:site_name" content="Hành Tinh Công Nghệ">
+<meta property="article:section" content="laravel">
+<meta property="og:updated_time" content="2022-12-04T12:05:24+07:00">
+<meta property="og:image" content="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png">
+<meta property="og:image:secure_url" content="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png">
+<meta property="og:image:width" content="700">
+<meta property="og:image:height" content="350">
+<meta property="og:image:alt" content="phân quyền trong laravel với spatie laravel permisison">
+<meta property="og:image:type" content="image/png">
+<meta property="article:published_time" content="2022-05-31T21:16:48+07:00">
+<meta property="article:modified_time" content="2022-12-04T12:05:24+07:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phân quyền trong laravel với spatie laravel permission">
+<meta name="twitter:description" content="Trong laravel có hỗ trợ rất nhiều package phân quyền khác nhau, nhưng có lẽ phân quyền trong laravel bằng laravel permission là hoàn chỉnh nhất.">
+<meta name="twitter:image" content="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="admin">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="44 minutes">
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/f.txt"></script><script async="" src="./Phân quyền trong laravel với spatie laravel permission_files/matomo.js"></script><script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://hanhtinhcongnghe.com/#organization","name":"hanhtinhcongnghe","url":"https://hanhtinhcongnghe.com","logo":{"@type":"ImageObject","@id":"https://hanhtinhcongnghe.com/#logo","url":"https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/htcn-logo.png","contentUrl":"https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/htcn-logo.png","caption":"hanhtinhcongnghe","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://hanhtinhcongnghe.com/#website","url":"https://hanhtinhcongnghe.com","name":"hanhtinhcongnghe","publisher":{"@id":"https://hanhtinhcongnghe.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png","url":"https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png","width":"700","height":"350","caption":"ph\u00e2n quy\u00ea\u0300n trong laravel v\u01a1\u0301i spatie laravel permisison","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://hanhtinhcongnghe.com","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/","name":"Ph\u00e2n quy\u00ea\u0300n trong laravel v\u01a1\u0301i spatie laravel permission"}}]},{"@type":"WebPage","@id":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#webpage","url":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/","name":"Ph\u00e2n quy\u00ea\u0300n trong laravel v\u01a1\u0301i spatie laravel permission","datePublished":"2022-05-31T21:16:48+07:00","dateModified":"2022-12-04T12:05:24+07:00","isPartOf":{"@id":"https://hanhtinhcongnghe.com/#website"},"primaryImageOfPage":{"@id":"https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png"},"inLanguage":"en-US","breadcrumb":{"@id":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#breadcrumb"}},{"@type":"Person","@id":"https://hanhtinhcongnghe.com/author/admin-2/","name":"admin","description":"Chuy\u00ean trang c\u00f4ng ngh\u1ec7 h\u00e0ng \u0111\u1ea7u Vi\u1ec7t Nam, n\u01a1i giao l\u01b0u, chia s\u1ebd ki\u1ebfn th\u1ee9c, b\u00e0i vi\u1ebft v\u1ec1 c\u00e1c ch\u1ee7 \u0111\u1ec1 c\u00f4ng ngh\u1ec7, c\u00f4ng ngh\u00ea\u0323 th\u00f4ng tin, m\u00e1y t\u00ednh, m\u00e1y in, di \u0111\u1ed9ng.","url":"https://hanhtinhcongnghe.com/author/admin-2/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ea215660e7102613e5ff1fdb1d75be09?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ea215660e7102613e5ff1fdb1d75be09?s=96&amp;d=mm&amp;r=g","caption":"admin","inLanguage":"en-US"},"worksFor":{"@id":"https://hanhtinhcongnghe.com/#organization"}},{"@type":"BlogPosting","headline":"Ph\u00e2n quy\u00ea\u0300n trong laravel v\u01a1\u0301i spatie laravel permission","keywords":"ph\u00e2n quy\u00ea\u0300n trong laravel,ph\u00e2n quy\u1ec1n laravel,spatie laravel,laravel permission,ph\u00e2n quy\u1ec1n v\u1edbi spatie","datePublished":"2022-05-31T21:16:48+07:00","dateModified":"2022-12-04T12:05:24+07:00","author":{"@id":"https://hanhtinhcongnghe.com/author/admin-2/","name":"admin"},"publisher":{"@id":"https://hanhtinhcongnghe.com/#organization"},"description":"Trong laravel co\u0301 h\u00f4\u0303 tr\u01a1\u0323 r\u00e2\u0301t nhi\u00ea\u0300u package ph\u00e2n quy\u00ea\u0300n kha\u0301c nhau, nh\u01b0ng co\u0301 le\u0303 ph\u00e2n quy\u00ea\u0300n trong laravel b\u0103\u0300ng laravel permission la\u0300 hoa\u0300n chi\u0309nh nh\u00e2\u0301t.","name":"Ph\u00e2n quy\u00ea\u0300n trong laravel v\u01a1\u0301i spatie laravel permission","@id":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#richSnippet","isPartOf":{"@id":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#webpage"},"image":{"@id":"https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="Hành Tinh Công Nghệ » Feed" href="https://hanhtinhcongnghe.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Hành Tinh Công Nghệ » Comments Feed" href="https://hanhtinhcongnghe.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Hành Tinh Công Nghệ » Phân quyền trong laravel với spatie laravel permission Comments Feed" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hanhtinhcongnghe.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel="stylesheet" id="bootstrap-style-css" href="./Phân quyền trong laravel với spatie laravel permission_files/bootstrap.min.css" media="all">
+<link rel="stylesheet" id="awesome-style-css" href="./Phân quyền trong laravel với spatie laravel permission_files/font-awesome.min.css" media="all">
+<link rel="stylesheet" id="hanhtinhcongnghe-style-css" href="./Phân quyền trong laravel với spatie laravel permission_files/style.css" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="./Phân quyền trong laravel với spatie laravel permission_files/style.min.css" media="all">
+<style id="rank-math-toc-block-style-inline-css">
+.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") ". ";counter-increment:item}
+
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="kk-star-ratings-css" href="./Phân quyền trong laravel với spatie laravel permission_files/kk-star-ratings.min.css" media="all">
+<link rel="stylesheet" id="ez-toc-css" href="./Phân quyền trong laravel với spatie laravel permission_files/screen.min.css" media="all">
+<style id="ez-toc-inline-css">
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: 90%;}div#ez-toc-container {width: 100%;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/jquery.min.js" id="jquery-core-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://hanhtinhcongnghe.com/wp-json/"><link rel="alternate" type="application/json" href="https://hanhtinhcongnghe.com/wp-json/wp/v2/posts/640"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hanhtinhcongnghe.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.5.2">
+<link rel="shortlink" href="https://hanhtinhcongnghe.com/?p=640">
+<link rel="alternate" type="application/json+oembed" href="https://hanhtinhcongnghe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhanhtinhcongnghe.com%2Fphan-quyen-trong-laravel%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://hanhtinhcongnghe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhanhtinhcongnghe.com%2Fphan-quyen-trong-laravel%2F&amp;format=xml">
+<script type="application/ld+json">{
+    "@context": "https://schema.org/",
+    "@type": "CreativeWorkSeries",
+    "name": "Phân quyền trong laravel với spatie laravel permission",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "ratingCount": "4"
+    }
+}</script><link rel="icon" href="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/hanhtinhcongnghe-icon.webp" sizes="32x32">
+<link rel="icon" href="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/hanhtinhcongnghe-icon.webp" sizes="192x192">
+<link rel="apple-touch-icon" href="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/hanhtinhcongnghe-icon.webp">
+<meta name="msapplication-TileImage" content="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/hanhtinhcongnghe-icon.webp">
+	<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//doluong.hanhtinhcongnghe.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./Phân quyền trong laravel với spatie laravel permission_files/wp-emoji-release.min.js" defer=""></script><style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style></head>
+
+<body class="post-template-default single single-post postid-640 single-format-standard wp-custom-logo" style="transform: none;">
+	<div id="page" class="site" style="transform: none;">
+	<a class="skip-link screen-reader-text" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#primary">Skip to content</a>
+
+	<header id="masthead" class="site-header">
+	    <div class="header-top d-none d-lg-block">
+			<div class="container-xl">
+				<div class="header-top-inner">
+					<div class="header-top-left col-lg-8">
+						<ul id="secondary-menu" class="secondary-menu"><li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="https://hanhtinhcongnghe.com/">Home</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Giới thiệu</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Liên hệ</a></li>
+</ul>					</div>
+					<div class="header-top-right col-lg-4">
+						<span class="menu-date">
+							April 20, 2024						</span>						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<div class="header-middle d-none d-lg-block">
+			<div class="container-xl">
+				<div class="header-middle-inner">
+					<div class="col-lg-4">
+						<div class="site-branding">
+							<div class="site-title"><a href="https://hanhtinhcongnghe.com/" class="custom-logo-link" rel="home"><img width="303" height="76" src="./Phân quyền trong laravel với spatie laravel permission_files/htcn-logo.webp" class="custom-logo" alt="logo hành tinh công nghệ" decoding="async" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo.webp 303w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo-300x75.webp 300w" sizes="(max-width: 303px) 100vw, 303px"></a></div>							
+						</div><!-- .site-branding -->
+					</div>
+					<div class="col-lg-8 justify-content-end">
+						<a class="top-banner" href="https://my.hawkhost.com/aff.php?aff=15952">
+							<img src="./Phân quyền trong laravel với spatie laravel permission_files/banner-hawhost.webp" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom is-fixed">
+			<div class="container-xl">
+				<div class="header-bottom-inner">
+					<div class="header-bottom-left">
+						<div class="opened-menu">
+							<i class="fa fa-bars"></i>
+						</div>						
+						<div class="overlay"></div>	
+						<nav id="site-navigation" class="main-navigation">
+							<div class="menu-logo">
+								<a href="https://hanhtinhcongnghe.com/" class="custom-logo-link" rel="home"><img width="303" height="76" src="./Phân quyền trong laravel với spatie laravel permission_files/htcn-logo.webp" class="custom-logo" alt="logo hành tinh công nghệ" decoding="async" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo.webp 303w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo-300x75.webp 300w" sizes="(max-width: 303px) 100vw, 303px"></a>								<button type="button" class="closed-menu">
+									<i class="fa fa-times"></i>
+								</button>
+							</div>
+							<ul class="primary-menu"><li class="menu-item"><a href="https://hanhtinhcongnghe.com/">Trang chủ</a></li>
+<li class="menu-item"><a href="https://hanhtinhcongnghe.com/category/tin-hoc/">Tin học</a></li>
+<li class="menu-item menu-item-has-children"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#" data-toggle="sub-menu">Máy in</a>
+<ul class="sub-menu ">
+	<li class="menu-item"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Máy in Epson</a></li>
+	<li class="menu-item"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Máy in Canon</a></li>
+	<li class="menu-item"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Máy in Samsung</a></li>
+	<li class="menu-item"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Máy in Brother</a></li>
+	<li class="menu-item"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Máy in Xerox</a></li>
+</ul>
+</li>
+<li class="menu-item"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#">Điện thoại</a></li>
+<li class="menu-item"><a href="https://hanhtinhcongnghe.com/category/thu-thuat/">Thủ thuật</a></li>
+<li class="menu-item menu-item-has-children"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#" data-toggle="sub-menu">Tiện ích</a>
+<ul class="sub-menu ">
+	<li class="menu-item"><a href="https://hanhtinhcongnghe.com/lam-dep-css/">Làm đẹp CSS</a></li>
+</ul>
+</li>
+<li class="menu-item"><a href="https://hanhtinhcongnghe.com/blog/">Blog</a></li>
+</ul>						</nav><!-- #site-navigation -->
+						
+					</div>
+					<div class="header-bottom-center">
+						<div class="d-lg-none">
+							<a href="https://hanhtinhcongnghe.com/" class="custom-logo-link" rel="home"><img width="303" height="76" src="./Phân quyền trong laravel với spatie laravel permission_files/htcn-logo.webp" class="custom-logo" alt="logo hành tinh công nghệ" decoding="async" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo.webp 303w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo-300x75.webp 300w" sizes="(max-width: 303px) 100vw, 303px"></a>						</div>						
+						
+					</div>
+					<div class="header-bottom-right">
+						<div class="social d-none d-lg-flex">
+							<a class="social-btn facebook" href="https://www.facebook.com/ddtinhocvn/" target="_blank" title="facebook"></a>
+							<a class="social-btn twitter" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#" target="_blank" title="twitter"></a>
+							<a class="social-btn youtube" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#" target="_blank" title="youtube"></a>
+							<a class="social-btn linkedin" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#" target="_blank" title="linkedin"></a>
+							<a class="social-btn vk" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#" target="_blank" title="vk"></a>
+						</div>
+						<div class="search-wrap">
+							<span class="search-icon"></span>
+							<form action="https://hanhtinhcongnghe.com/" class="search-form" target="_top">
+								<input type="text" name="s" pattern=".*\S.*" placeholder="Nhập thông tin cần tìm..." required="" autocomplete="off">
+								<button class="search-btn" type="submit">
+									<span>Search</span>
+								</button>
+							</form>
+						</div>																		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-trending d-none d-lg-block">
+			<div class="container-xl">
+				<div class="header-trending-inner">
+											<div class="col-lg-2">
+							<a class="header-trending-link" href="https://hanhtinhcongnghe.com/cach-lay-am-thanh-tren-google-translate/" rel="bookmark">
+								<div class="header-trending-thumbnail">
+									<img width="50" height="50" src="./Phân quyền trong laravel với spatie laravel permission_files/tai-am-thanh-google-translate-150x150.webp" class="attachment-50x50 size-50x50 wp-post-image" alt="tải âm thanh google translate" decoding="async">								</div>
+								<h4 class="header-trending-title">Cách lấy âm thanh trên google translate</h4>
+							</a>
+						</div>
+											<div class="col-lg-2">
+							<a class="header-trending-link" href="https://hanhtinhcongnghe.com/lam-the-nao-de-xoa-thong-tin-ca-nhan-tren-google-search/" rel="bookmark">
+								<div class="header-trending-thumbnail">
+									<img width="50" height="50" src="./Phân quyền trong laravel với spatie laravel permission_files/cach-xoa-thong-tin-ca-nha-khoi-google-search-150x150.webp" class="attachment-50x50 size-50x50 wp-post-image" alt="Làm cách nào để xoá thông tin cá nhận khỏi google search" decoding="async">								</div>
+								<h4 class="header-trending-title">Làm thế nào để xoá thông tin cá nhân trên google search</h4>
+							</a>
+						</div>
+											<div class="col-lg-2">
+							<a class="header-trending-link" href="https://hanhtinhcongnghe.com/khac-phuc-loi-am-thanh-bluetooth-bi-nho-tren-windows-11/" rel="bookmark">
+								<div class="header-trending-thumbnail">
+									<img width="50" height="50" src="./Phân quyền trong laravel với spatie laravel permission_files/cach-khac-phuc-loi-am-thanh-bluetooth-bi-nho-trong-windows-11-150x150.webp" class="attachment-50x50 size-50x50 wp-post-image" alt="Cách khắc phục lỗi âm thanh bluetooth bị nhỏ trên windows 11" decoding="async">								</div>
+								<h4 class="header-trending-title">Khắc phục lỗi âm thanh bluetooth bị nhỏ trên windows 11</h4>
+							</a>
+						</div>
+											<div class="col-lg-2">
+							<a class="header-trending-link" href="https://hanhtinhcongnghe.com/cach-tang-toc-do-khoi-dong-cua-windows-11/" rel="bookmark">
+								<div class="header-trending-thumbnail">
+									<img width="50" height="50" src="./Phân quyền trong laravel với spatie laravel permission_files/cach-tang-toc-do-khoi-dong-cua-windows-11-13-150x150.webp" class="attachment-50x50 size-50x50 wp-post-image" alt="Tăng tốc độ khởi động của windows 11" decoding="async">								</div>
+								<h4 class="header-trending-title">Cách tăng tốc độ khởi động của windows 11</h4>
+							</a>
+						</div>
+											<div class="col-lg-2">
+							<a class="header-trending-link" href="https://hanhtinhcongnghe.com/cach-xoa-hang-loat-file-va-folder-tren-windows/" rel="bookmark">
+								<div class="header-trending-thumbnail">
+									<img width="50" height="50" src="./Phân quyền trong laravel với spatie laravel permission_files/cach-xoa-file-va-folde-hang-loat-bang-cmd-trong-windows-150x150.webp" class="attachment-50x50 size-50x50 wp-post-image" alt="Cách xoá file và folder hàng loạt trong windows băng cmd" decoding="async">								</div>
+								<h4 class="header-trending-title">Cách xoá hàng loạt file và folder trên windows</h4>
+							</a>
+						</div>
+											<div class="col-lg-2">
+							<a class="header-trending-link" href="https://hanhtinhcongnghe.com/xem-lai-mat-khau-wifi-ma-ban-da-tung-ket-noi/" rel="bookmark">
+								<div class="header-trending-thumbnail">
+									<img width="50" height="50" src="./Phân quyền trong laravel với spatie laravel permission_files/xem-lai-mat-khau-wifi-tung-ket-noi-150x150.webp" class="attachment-50x50 size-50x50 wp-post-image" alt="Tìm lại mật khẩu wifi từng kết nối" decoding="async">								</div>
+								<h4 class="header-trending-title">Xem lại mật khẩu wifi mà bạn đã từng kết nối</h4>
+							</a>
+						</div>
+									</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+
+	<main id="primary" class="site-main" style="transform: none;">
+		<div class="container-xl" style="transform: none;">
+			<div class="main-flex" style="transform: none;">
+				<div class="main-content">
+					
+<article id="post-640" class="post-640 post type-post status-publish format-standard has-post-thumbnail hentry category-laravel">
+	<header class="single-header">
+		<div class="single-category">
+			<a href="https://hanhtinhcongnghe.com/category/laravel/" rel="category tag">laravel</a>		</div>
+		<h1 class="single-title">Phân quyền trong laravel với spatie laravel permission</h1>			<div class="single-meta">
+				<span class="posted-on">Posted on <a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" rel="bookmark"><time class="entry-date published" datetime="2022-05-31T21:16:48+07:00">May 31, 2022</time><time class="updated" datetime="2022-12-04T12:05:24+07:00">December 4, 2022</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://hanhtinhcongnghe.com/author/admin-2/">admin</a></span></span>			</div><!-- .single-meta -->
+			</header><!-- .single-header -->
+		<div class="single-thumbnail">
+		<img width="640" height="320" src="./Phân quyền trong laravel với spatie laravel permission_files/laravel-7-auth.png" class="attachment-medium_large size-medium_large wp-post-image" alt="phân quyền trong laravel với spatie laravel permisison" decoding="async" fetchpriority="high" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png 700w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth-300x150.png 300w" sizes="(max-width: 640px) 100vw, 640px">	</div>
+		<div class="single-content">
+		
+
+<div class="kk-star-ratings kksr-auto kksr-align-right kksr-valign-top" data-payload="{&quot;align&quot;:&quot;right&quot;,&quot;id&quot;:&quot;640&quot;,&quot;slug&quot;:&quot;default&quot;,&quot;valign&quot;:&quot;top&quot;,&quot;ignore&quot;:&quot;&quot;,&quot;reference&quot;:&quot;auto&quot;,&quot;class&quot;:&quot;&quot;,&quot;count&quot;:&quot;4&quot;,&quot;legendonly&quot;:&quot;&quot;,&quot;readonly&quot;:&quot;&quot;,&quot;score&quot;:&quot;5&quot;,&quot;starsonly&quot;:&quot;&quot;,&quot;best&quot;:&quot;5&quot;,&quot;gap&quot;:&quot;5&quot;,&quot;greet&quot;:&quot;\u0110a\u0301nh gia\u0301 ba\u0300i vi\u00ea\u0301t&quot;,&quot;legend&quot;:&quot;5\/5 - (4 votes)&quot;,&quot;size&quot;:&quot;20&quot;,&quot;title&quot;:&quot;Ph\u00e2n quy\u00ea\u0300n trong laravel v\u01a1\u0301i spatie laravel permission&quot;,&quot;width&quot;:&quot;122.5&quot;,&quot;_legend&quot;:&quot;{score}\/{best} - ({count} {votes})&quot;,&quot;font_factor&quot;:&quot;1.25&quot;}">
+            
+<div class="kksr-stars">
+    
+<div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+    </div>
+    
+<div class="kksr-stars-active" style="width: 122.5px;">
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 20px; height: 20px;"></div>
+        </div>
+    </div>
+</div>
+                
+
+<div class="kksr-legend" style="font-size: 16px;">
+            5/5 - (4 votes)    </div>
+    </div>
+
+<p>Phân quyền là chủ đề khó nhằn nhất trong thiết kế website. Hôm nay chúng ta sẽ cùng tìm hiểu cách <strong>phân quyền trong larvel</strong> với sự hỗ trợ của của spatie.</p>
+
+
+
+<div id="ez-toc-container" class="ez-toc-v2_0_65 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title ">Nội dung bài viết</p>
+<span class="ez-toc-title-toggle"><a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle ez-toc-loaded" aria-label="Toggle Table of Content"><span class="ez-toc-js-icon-con"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"></path></svg></span></span></span></a></span></div>
+<nav><ul class="ez-toc-list ez-toc-list-level-1 "><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Cai_dat_laravel_de_tien_hanh_phan_quyen_trong_laravel" title="Cài đặt laravel để tiến hành phân quyền trong laravel">Cài đặt laravel để tiến hành phân quyền trong laravel</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Cai_dat_spatie_laravel_permission_de_phan_quyen" title="Cài đặt spatie laravel permission để phân quyền">Cài đặt spatie laravel permission để phân quyền</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-3" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Cac_buoc_tien_hanh_phan_quyen_trong_laravel" title="Các bước tiến hành phân quyền trong laravel">Các bước tiến hành phân quyền trong laravel</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-4" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_1_Dang_ky_Middleware_de_phan_quyen" title="Bước 1: Đăng ký Middleware để phân quyền">Bước 1: Đăng ký Middleware để phân quyền</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-5" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_2_Tao_trang_dang_nhap_va_dang_ky_trong_laravel" title="Bước 2: Tạo trang đăng nhập và đăng ký trong laravel">Bước 2: Tạo trang đăng nhập và đăng ký trong laravel</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-6" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_3_Them_routes" title="Bước 3: Thêm routes">Bước 3: Thêm routes</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-7" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_4_Tao_controllers" title="Bước 4: Tạo controllers">Bước 4: Tạo controllers</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-8" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_5_Tao_layouts" title="Bước 5: Tạo layouts">Bước 5: Tạo layouts</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-9" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_6_Tao_giao_dien_quan_ly_users" title="Bước 6: Tạo giao diện quản lý users">Bước 6: Tạo giao diện quản lý users</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-10" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_7_Tao_giao_dien_quan_ly_Roles" title="Bước 7: Tạo giao diện quản lý Roles">Bước 7: Tạo giao diện quản lý Roles</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-11" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_7_Tao_giao_dien_quan_ly_cho_permissions" title="Bước 7: Tạo giao diện quản lý cho permissions">Bước 7: Tạo giao diện quản lý cho permissions</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-12" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_8_tao_seeder_de_them_du_lieu_vao_bang" title="Bước 8: tạo seeder để thêm dữ liệu vào bảng">Bước 8: tạo seeder để thêm dữ liệu vào bảng</a></li></ul></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-13" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Thiet_lap_quyen_Super_Admin_trong_phan_quyen_laravel" title="Thiết lập quyền Super Admin trong phần quyền laravel">Thiết lập quyền Super Admin trong phần quyền laravel</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-14" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Ket_luan" title="Kết luận">Kết luận</a></li></ul></nav></div>
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Cai_dat_laravel_de_tien_hanh_phan_quyen_trong_laravel" ez-toc-data-id="#Cai_dat_laravel_de_tien_hanh_phan_quyen_trong_laravel"></span>Cài đặt laravel để tiến hành phân quyền trong laravel<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Khi tiến hành phân quyền có nghĩa là chúng ta sẽ bắt đầu một dự án mới. Vì vậy nên Chúng ta sẽ bắt đầu  với việc cài đặt laravel.</p>
+
+
+
+<pre class="wp-block-code"><code>composer create-project --prefer-dist laravel/laravel phanquyen-app</code></pre>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Cai_dat_spatie_laravel_permission_de_phan_quyen" ez-toc-data-id="#Cai_dat_spatie_laravel_permission_de_phan_quyen"></span>Cài đặt spatie laravel permission để phân quyền<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Để cài đặt gói spatie laravel permission vào dự án laravel nhằm phân quyền, bạn mở command lên và chuyển về thư mục gốc của dự án rồi chạy đoạn code dưới đây.</p>
+
+
+
+<pre class="wp-block-code"><code>composer require spatie/laravel-permission</code></pre>
+
+
+
+<p>Trong bài hướng dẫn này có một số phần sử dụng form collection vì vậy bạn cần cài thêm gói form collection để hỗ trợ. Nếu bạn không muốn sử dụng nó thì có thể bỏ qua, và nhớ chỉnh lại một vài đoạn code cho phù hợp.</p>
+
+
+
+<pre class="wp-block-code"><code>composer require laravelcollective/html</code></pre>
+
+
+
+<p>Tiếp theo bạn vào thư mục <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">config</mark> và mở file <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">app.php</mark> lên rồi thêm vào bên trong đó đoạn code như sau.</p>
+
+
+
+<p><strong>config/app.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>'providers' =&gt; [
+
+	....
+
+	Spatie\Permission\PermissionServiceProvider::class,
+],</code></pre>
+
+
+
+<p>Sau khi đã chỉnh sửa như trên thì bạn cần chạy đoạn lệnh bên dưới để kích hoạt nó.</p>
+
+
+
+<pre class="wp-block-code"><code>php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"</code></pre>
+
+
+
+<p>Và tiếp theo là chạy migrate với câu lệnh bên dưới để tạo ra các bảng như users, permissions, roles, role_has_permissions, model_has_permissions, model_has_roles.</p>
+
+
+
+<pre class="wp-block-code"><code>php artisan migrate</code></pre>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="700" height="370" src="./Phân quyền trong laravel với spatie laravel permission_files/phan-quyen-trong-laravel-voi-spatie-laravel-permission-1.webp" alt="table phân quyền trong laravel" class="wp-image-695" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-1.webp 700w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-1-300x159.webp 300w" sizes="(max-width: 700px) 100vw, 700px"><figcaption class="wp-element-caption"><strong>Migrate tạo bảng cho phân quyền trong laravel</strong></figcaption></figure></div>
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Cac_buoc_tien_hanh_phan_quyen_trong_laravel" ez-toc-data-id="#Cac_buoc_tien_hanh_phan_quyen_trong_laravel"></span>Các bước tiến hành phân quyền trong laravel<span class="ez-toc-section-end"></span></h2>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_1_Dang_ky_Middleware_de_phan_quyen" ez-toc-data-id="#Buoc_1_Dang_ky_Middleware_de_phan_quyen"></span>Bước 1: Đăng ký Middleware để phân quyền<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Spatie cung cấp <em>phân quyền trong laravel </em>dưới dạng middleware vì vậy chúng ta cần thêm middleware vào file kernel.php đoạn code bên dưới.</p>
+
+
+
+<pre class="wp-block-code"><code>....
+protected $routeMiddleware = [
+    ....
+    'role' =&gt; \Spatie\Permission\Middlewares\RoleMiddleware::class,
+    'permission' =&gt; \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+    'role_or_permission' =&gt; \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
+]
+....</code></pre>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_2_Tao_trang_dang_nhap_va_dang_ky_trong_laravel" ez-toc-data-id="#Buoc_2_Tao_trang_dang_nhap_va_dang_ky_trong_laravel"></span>Bước 2: Tạo trang đăng nhập và đăng ký trong laravel<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Ở bước bạn sẽ tạo giao diện đăng nhập và đăng ký mặc định cho laravel. Bạn thiết lập authentication cho trong laravel bằng cách chạy lần lượt từng dòng code ở dưới.</p>
+
+
+
+<pre class="wp-block-code"><code>composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install
+npm run dev</code></pre>
+
+
+
+<p>Nếu gặp lỗi thì có thể chạy như bên dưới.</p>
+
+
+
+<pre class="wp-block-code"><code>composer require laravel/ui "^3.0" 
+php artisan ui bootstrap --auth
+npm install
+npm run dev</code></pre>
+
+
+
+<p>Thay vì bootstrap thì tại đây bạn cũng có thể sử dụng vue.</p>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_3_Them_routes" ez-toc-data-id="#Buoc_3_Them_routes"></span>Bước 3: Thêm routes<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Bạn cần thêm một số thông tin ở file web.php nhằm giúp cho laravel xác định đường đi (route) cho các trang con mà bạn sắp tạo.</p>
+
+
+
+<p><strong>routes/web.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PermissionController;
+
+...
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])-&gt;name('home');
+
+Route::group(['middleware' =&gt; ['auth']], function() {
+    Route::resource('roles', RoleController::class);
+    Route::resource('users', UserController::class);
+    Route::resource('permissions', PermissionController::class);
+});</code></pre>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_4_Tao_controllers" ez-toc-data-id="#Buoc_4_Tao_controllers"></span>Bước 4: Tạo controllers<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Ta sẽ tiến hành tạo ra 3 file controllers lần lượt là: UserController.php, RoleController.php và PermissionController.php.</p>
+
+
+
+<p><strong>app/Http/Controllers/UserController.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;?php
+
+namespace App\Http\Controllers;
+    
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\User;
+use Spatie\Permission\Models\Role;
+use DB;
+use Hash;
+use Illuminate\Support\Arr;
+    
+class UserController extends Controller
+{
+    function __construct()
+    {
+         $this-&gt;middleware('permission:user-list|user-create|user-edit|user-delete', ['only' =&gt; ['index','store']]);
+         $this-&gt;middleware('permission:user-create', ['only' =&gt; ['create','store']]);
+         $this-&gt;middleware('permission:user-edit', ['only' =&gt; ['edit','update']]);
+         $this-&gt;middleware('permission:user-delete', ['only' =&gt; ['destroy']]);
+    }
+    public function index(Request $request)
+    {
+
+        $users = User::orderBy('id','DESC')-&gt;paginate(5);
+
+        return view('users.index',compact('users'));
+
+    }
+    
+
+    public function create()
+    {
+        if(auth()-&gt;user()-&gt;hasRole('Super-Admin')){
+            $roles = Role::pluck('name','name')-&gt;all();
+        }else{
+            $roles = Role::pluck('name','name')-&gt;except(['name', 'Super-Admin']);
+        }
+        
+        return view('users.create',compact('roles'));
+    }
+    
+
+    public function store(Request $request)
+    {
+        $this-&gt;validate($request, [
+            'name' =&gt; 'required',
+            'email' =&gt; 'required|email|unique:users,email',
+            'password' =&gt; 'required',
+            'confirm-password' =&gt; 'required|same:password',
+            'roles' =&gt; 'required'
+        ]);
+    
+        $input = $request-&gt;all();
+        $input['password'] = Hash::make($input['password']);
+    
+        $user = User::create($input);
+        $user-&gt;assignRole($request-&gt;input('roles'));
+    
+        $notification = array(            
+            'message' =&gt; 'User created successfully',
+            'alert-type' =&gt; 'success'            
+        );
+        return redirect()-&gt;route('users.index')
+                        -&gt;with($notification);
+    }
+    
+    public function show($id)
+    {
+        return redirect()-&gt;route('users.index');
+    }
+    
+    public function edit($id)
+    {
+        $user = User::find($id);
+        if($user-&gt;hasRole('Super-Admin')){
+            $notification = array(            
+                'message' =&gt; "You have no permission for edit this user",
+                'alert-type' =&gt; 'error'            
+            );
+            return redirect()-&gt;route('users.index')
+                            -&gt;with($notification);
+        }
+        if(auth()-&gt;user()-&gt;hasRole('Super-Admin')){
+            $roles = Role::pluck('name','name')-&gt;all();
+        }else{
+            $roles = Role::pluck('name','name')-&gt;except(['name', 'Super-Admin']);
+        }
+        $userRole = $user-&gt;roles-&gt;pluck('name','name')-&gt;all();
+    
+        return view('users.edit',compact('user','roles','userRole'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this-&gt;validate($request, [
+            'name' =&gt; 'required',
+            'email' =&gt; 'required|email|unique:users,email,'.$id,
+            'password' =&gt; 'same:confirm-password',            
+            'roles' =&gt; 'required'
+        ]);
+    
+        $input = $request-&gt;all();
+        if(!empty($input['password'])){ 
+            $input['password'] = Hash::make($input['password']);
+        }else{
+            $input = Arr::except($input,array('password'));    
+        }
+    
+        $user = User::find($id);
+        $user-&gt;update($input);
+        DB::table('model_has_roles')-&gt;where('model_id',$id)-&gt;delete();
+    
+        $user-&gt;assignRole($request-&gt;input('roles'));
+    
+        $notification = array(            
+            'message' =&gt; 'User updated successfully',
+            'alert-type' =&gt; 'success'            
+        );
+        return redirect()-&gt;route('users.index')
+                        -&gt;with($notification);
+    }
+    
+    public function destroy($id)
+    {
+        $user = User::find($id);
+        if(auth()-&gt;id() == $id){
+            $notification = array(            
+                'message' =&gt; "You cannot delete yourself",
+                'alert-type' =&gt; 'error'            
+            );
+            return redirect()-&gt;route('users.index')
+                            -&gt;with($notification);
+        }
+        if($user-&gt;hasRole('Super-Admin')){
+            $notification = array(            
+                'message' =&gt; "You have no permission for delete this user",
+                'alert-type' =&gt; 'error'            
+            );
+            return redirect()-&gt;route('users.index')
+                            -&gt;with($notification);
+        }
+        $user-&gt;delete();
+        $notification = array(            
+            'message' =&gt; "User deleted successfully",
+            'alert-type' =&gt; 'success'            
+        );
+        return redirect()-&gt;route('users.index')
+                        -&gt;with($notification);
+    }    
+}</code></pre>
+
+
+
+<p><strong>app/Http/Controllers/RoleController.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;?php
+
+namespace App\Http\Controllers;
+
+
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use App\Http\Controllers\Controller;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+use Illuminate\Support\Facades\Auth;
+use DB;
+    
+class RoleController extends Controller
+{
+
+    function __construct()
+    {
+         $this-&gt;middleware('permission:role-list|role-create|role-edit|role-delete', ['only' =&gt; ['index','store']]);
+         $this-&gt;middleware('permission:role-create', ['only' =&gt; ['create','store']]);
+         $this-&gt;middleware('permission:role-edit', ['only' =&gt; ['edit','update']]);
+         $this-&gt;middleware('permission:role-delete', ['only' =&gt; ['destroy']]);
+    }
+    
+    public function index(Request $request)
+    {
+        $roles = Role::orderBy('id','DESC')-&gt;paginate(5);
+        return view('roles.index',compact('roles'));
+    }
+    
+    public function create()
+    {
+        $permission = Permission::get();
+        return view('roles.create',compact('permission'));
+    }
+    
+    public function store(Request $request)
+    {
+        $this-&gt;validate($request, [
+            'name' =&gt; 'required|unique:roles,name',
+            'permission' =&gt; 'required',
+        ]);
+    
+        $role = Role::create(['name' =&gt; $request-&gt;input('name')]);
+        $role-&gt;syncPermissions($request-&gt;input('permission'));
+    
+        return redirect()-&gt;route('roles.index')
+                        -&gt;with('success','Role created successfully');
+    }
+
+    public function show($id)
+    {
+        return redirect()-&gt;route('roles.index');
+    }
+    
+    public function edit($id)
+    {
+        $role = Role::find($id);
+        if($role-&gt;name == 'Super-Admin'){
+            $notification = array(            
+                'message' =&gt; "You have no permission for edit this role",
+                'alert-type' =&gt; 'error'            
+            );
+            return redirect()-&gt;route('roles.index')
+                            -&gt;with($notification);
+        }
+
+        $permission = Permission::get();
+        $rolePermissions = DB::table("role_has_permissions")-&gt;where("role_has_permissions.role_id",$id)
+            -&gt;pluck('role_has_permissions.permission_id','role_has_permissions.permission_id')
+            -&gt;all();
+    
+        return view('roles.edit',compact('role','permission','rolePermissions'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this-&gt;validate($request, [
+            'name' =&gt; [
+                'required',
+                Rule::unique('roles','name')-&gt;ignore($id)
+            ],
+            'permission' =&gt; 'required'
+        ]);
+    
+        $role = Role::find($id);
+        $role-&gt;name = $request-&gt;input('name');
+        $role-&gt;save();
+    
+        $role-&gt;syncPermissions($request-&gt;input('permission'));
+    
+        return redirect()-&gt;route('roles.index')
+                        -&gt;with('success','Role updated successfully');
+    }
+
+    public function destroy($id)
+    {
+        $role = Role::find($id);
+
+        if (auth()-&gt;user()-&gt;roles-&gt;find($id)) {        
+            $notification = array(            
+                'message' =&gt; 'You have no permission for delete this role',
+                'alert-type' =&gt; 'error'            
+            );
+            return redirect()-&gt;route('roles.index')
+                            -&gt;with($notification);
+        }
+        if ($role-&gt;name == "Super-Admin"){
+            $notification = array(            
+                'message' =&gt; 'You have no permission for delete Super-Admin role',
+                'alert-type' =&gt; 'error'            
+            );
+            return redirect()-&gt;route('roles.index')
+                            -&gt;with($notification);
+        }
+        $role-&gt;delete();       
+
+        $notification = array(            
+            'message' =&gt; 'The role deleted successfully',
+            'alert-type' =&gt; 'success'            
+        );
+        return redirect()-&gt;route('roles.index')
+                        -&gt;with($notification);
+    }
+}</code></pre>
+
+
+
+<p><strong>app/Http/Controllers/PermisisonController.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use App\Http\Controllers\Controller;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+use PhpParser\Node\Stmt\TryCatch;
+
+
+use DB;
+
+class PermissionController extends Controller
+{
+
+    function __construct()
+    {
+         
+         $this-&gt;middleware('role:Super-Admin');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function index(Request $request)
+    {
+        $permissions = Permission::all();
+        if ($request-&gt;ajax()) {
+            return response()-&gt;json([
+                'permissions'=&gt;$permissions,
+            ]);
+        }
+        return view('permissions.index');
+
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function create()
+    {
+        return redirect()-&gt;route('permissions.index');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function store(Request $request)
+    {            
+        
+        $this-&gt;validate($request, [
+            'name' =&gt; 'required|unique:permissions',
+        ]);
+        Permission::Create(
+            [
+                'name' =&gt; $request-&gt;name,
+            ]
+        );
+
+        $notification = array(            
+            'message' =&gt; 'Permission added successfully',
+            'alert-type' =&gt; 'success'            
+        );
+        
+        return redirect()-&gt;route('permissions.index')
+                        -&gt;with($notification);
+
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     *
+     * @return \Illuminate\View\View
+     */
+    public function show($id)
+    {
+         return redirect()-&gt;route('permissions.index');
+    }
+
+    public function edit($id)
+    {
+        return redirect()-&gt;route('permissions.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this-&gt;validate($request, [
+            'name' =&gt; [
+                'required',
+                Rule::unique('permissions','name')-&gt;ignore($id)
+            ]
+        ]);
+        $permission = Permission::find($id); 
+        $permission-&gt;name = $request-&gt;name;        
+        $permission-&gt;save();
+    
+        return redirect()-&gt;route('permissions.index')
+                        -&gt;with('success','Permission updated successfully');
+    }
+
+    public function destroy($id)
+    {
+        DB::table("permissions")-&gt;where('id',$id)-&gt;delete();        
+        return response()-&gt;json([
+            'message' =&gt; 'Record deleted successfully!'
+          ]);
+        /* $notification = array(            
+            'message' =&gt; 'Permissions deleted successfully',
+            'alert-type' =&gt; 'success'            
+        );
+        return redirect()-&gt;route('permissions.index')
+                        -&gt;with($notification); */
+
+    }
+}</code></pre>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_5_Tao_layouts" ez-toc-data-id="#Buoc_5_Tao_layouts"></span>Bước 5: Tạo layouts<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Sau khi tiến hành tạo controller xong thì chúng ta cần phải tạo ra các file blade.php để có giao diện quản lý như index, create, edit, show.</p>
+
+
+
+<p>Trước hết  ta sẽ xây dựng layout cho dự án của mình bằng cách tạo một thư mục layouts trong views và lần lượt thêm các file dưới đây. Và trong dự án này mình sử dụng thư viện dashboard miễn phí <a href="https://adminlte.io/themes/v3/pages/forms/advanced.html" target="_blank" rel="noreferrer noopener">AdminLTE.io </a>để làm layout.</p>
+
+
+
+<p><strong>resources/views/layouts/app.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!doctype html&gt;
+&lt;html lang="{{ app()-&gt;getLocale() }}"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;@yield('title')&lt;/title&gt;
+
+    &lt;meta name="csrf_token" content="{{ csrf_token() }}" /&gt;
+
+    @include('layouts.styles')
+
+    &lt;script&gt;
+        var BASE_URL = '{{ url("/") }}';
+    &lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body class="hold-transition sidebar-mini layout-fixed"&gt;
+
+    &lt;div class="wrapper"&gt;
+        @include('layouts.header')
+        @include('layouts.sidebar')
+
+        &lt;!-- Content Wrapper --&gt;
+        &lt;div class="content-wrapper"&gt;
+            &lt;!-- Content Header (Page header) --&gt;
+            &lt;div class="content-header"&gt;
+                &lt;div class="container-fluid"&gt;
+                    &lt;div class="row mb-2"&gt;
+                        &lt;div class="col-sm-6"&gt;
+                            @yield('breadcrumb')
+                        &lt;/div&gt;&lt;!-- /.col --&gt;
+                        &lt;div class="col-sm-6"&gt;
+                            &lt;ol class="breadcrumb float-sm-right"&gt;
+                                &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class="breadcrumb-item active"&gt;Dashboard v1&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;&lt;!-- /.col --&gt;
+                    &lt;/div&gt;&lt;!-- /.row --&gt;
+                &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+            &lt;/div&gt;
+            &lt;!-- /.content-header --&gt;
+
+            &lt;!-- Main content --&gt;
+            &lt;div class="content"&gt;
+                &lt;div class="container-fluid"&gt;
+                    &lt;div class="row"&gt;
+                        @yield('content')
+                    &lt;/div&gt;
+                    &lt;!-- /.row --&gt;
+                &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+            &lt;/div&gt;
+            &lt;!-- /.content --&gt;
+        &lt;/div&gt;
+        &lt;footer class="main-footer"&gt;
+            &lt;strong&gt;Copyright &amp;copy; 2014-2021 &lt;a href="https://adminlte.io"&gt;AdminLTE.io&lt;/a&gt;.&lt;/strong&gt;
+            All rights reserved.
+            &lt;div class="float-right d-none d-sm-inline-block"&gt;
+            &lt;b&gt;Version&lt;/b&gt; 3.2.0
+            &lt;/div&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;
+
+    @include('layouts.footer')
+    @yield('scripts')
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+
+<p><strong>resources/views/layouts/header.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!-- Navbar --&gt;
+&lt;nav class="main-header navbar navbar-expand navbar-white navbar-light"&gt;
+    &lt;!-- Left navbar links --&gt;
+    &lt;ul class="navbar-nav"&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" data-widget="pushmenu" href="#" role="button"&gt;&lt;i class="fas fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item d-none d-sm-inline-block"&gt;
+        &lt;a href="index3.html" class="nav-link"&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item d-none d-sm-inline-block"&gt;
+        &lt;a href="#" class="nav-link"&gt;Contact&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- Right navbar links --&gt;
+    &lt;ul class="navbar-nav ml-auto align-items-center"&gt;
+      &lt;!-- Navbar Search --&gt;
+      &lt;li class="nav-item"&gt;
+            &lt;!-- SEARCH FORM --&gt;
+            &lt;form class="form-inline ml-0 ml-md-3"&gt;
+                &lt;div class="input-group input-group-sm"&gt;
+                    &lt;input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search"&gt;
+                    &lt;div class="input-group-append"&gt;
+                    &lt;button class="btn btn-navbar" type="submit"&gt;
+                        &lt;i class="fa fa-search"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/li&gt;
+
+        &lt;!-- Notifications Dropdown Menu --&gt;
+      &lt;li class="nav-item dropdown"&gt;
+        &lt;a class="nav-link" data-toggle="dropdown" href="#"&gt;
+          &lt;i class="far fa-bell"&gt;&lt;/i&gt;
+          &lt;span class="badge badge-warning navbar-badge"&gt;15&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"&gt;
+          &lt;span class="dropdown-item dropdown-header"&gt;15 Notifications&lt;/span&gt;
+          &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+          &lt;a href="#" class="dropdown-item"&gt;
+            &lt;i class="fas fa-envelope mr-2"&gt;&lt;/i&gt; 4 new messages
+            &lt;span class="float-right text-muted text-sm"&gt;3 mins&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+          &lt;a href="#" class="dropdown-item"&gt;
+            &lt;i class="fas fa-users mr-2"&gt;&lt;/i&gt; 8 friend requests
+            &lt;span class="float-right text-muted text-sm"&gt;12 hours&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+          &lt;a href="#" class="dropdown-item"&gt;
+            &lt;i class="fas fa-file mr-2"&gt;&lt;/i&gt; 3 new reports
+            &lt;span class="float-right text-muted text-sm"&gt;2 days&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+          &lt;a href="#" class="dropdown-item dropdown-footer"&gt;See All Notifications&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" data-widget="fullscreen" href="#" role="button"&gt;
+          &lt;i class="fas fa-expand-arrows-alt"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item dropdown dropdown-user"&gt;
+            &lt;a class="nav-link dropdown-user-link" id="dropdown-user" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;
+                &lt;div class="user-nav d-sm-flex d-none"&gt;
+                    &lt;span class="user-name font-weight-bolder dropdown-toggle "&gt;{{ Auth::user()-&gt;name }}&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+            &lt;div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user"&gt;
+                &lt;a class="dropdown-item" href="#"&gt;&lt;i class="fas fa-user-o"&gt;&lt;/i&gt;  Profile&lt;/a&gt;
+                &lt;a class="dropdown-item" href="#"&gt;&lt;i class="fas fa-envelope-o"&gt;&lt;/i&gt;  Inbox&lt;/a&gt;
+                &lt;a class="dropdown-item" href="#"&gt;&lt;i class="fas fa-check-square-o"&gt;&lt;/i&gt;  Task&lt;/a&gt;
+                &lt;a class="dropdown-item" href="#"&gt;&lt;i class="fas fa-comment-o"&gt;&lt;/i&gt;  Chats&lt;/a&gt;
+                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                &lt;a class="dropdown-item" href="#"&gt;&lt;i class="fas fa-cog"&gt;&lt;/i&gt;  Settings&lt;/a&gt;
+                &lt;a class="dropdown-item" href="#"&gt;&lt;i class="fas fa-question-circle-o"&gt;&lt;/i&gt;  FAQ&lt;/a&gt;
+                &lt;a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();"&gt;
+                                &lt;i class="fas fa-power-off"&gt;&lt;/i&gt;
+                    {{ ('Logout') }}
+                &lt;/a&gt;
+                &lt;form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;"&gt;
+                    @csrf
+                &lt;/form&gt;
+
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;!-- /.navbar --&gt;</code></pre>
+
+
+
+<p><strong>resources/views/layouts/footer.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!-- jQuery --&gt;
+&lt;script src="{{ asset('plugins/jquery/jquery.min.js') }}"&gt;&lt;/script&gt;
+&lt;!-- jQuery UI 1.11.4 --&gt;
+&lt;script src="{{ asset('plugins/jquery-ui/jquery-ui.min.js') }}"&gt;&lt;/script&gt;
+&lt;!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip --&gt;
+&lt;script&gt;
+  $.widget.bridge('uibutton', $.ui.button)
+&lt;/script&gt;
+&lt;!-- Bootstrap 4 --&gt;
+&lt;script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"&gt;&lt;/script&gt;
+&lt;!-- datepicker --&gt;
+&lt;script src="{{ asset('plugins/moment/moment.min.js') }}"&gt;&lt;/script&gt;
+&lt;!-- Tempusdominus Bootstrap 4 --&gt;
+&lt;script src="{{ asset('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"&gt;&lt;/script&gt;
+&lt;!-- Select2 --&gt;
+&lt;script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"&gt;&lt;/script&gt;
+&lt;!-- DataTable --&gt;
+&lt;script src="{{ asset('plugins/DataTables/datatables.min.js')}}"&gt;&lt;/script&gt;
+&lt;script src="{{ asset('plugins/DataTables/datatables.moment.min.js')}}"&gt;&lt;/script&gt;
+&lt;!-- sweetalert2 --&gt;
+&lt;script src="{{ asset('plugins/sweetalert2/sweetalert2.min.js') }}"&gt;&lt;/script&gt;
+
+&lt;!-- AdminLTE App --&gt;
+&lt;script src="{{ asset('js/app.min.js') }}"&gt;&lt;/script&gt;
+&lt;script&gt;
+     @if(Session::has('alert-type'))
+        var type = "{{ Session::get('alert-type', 'info') }}";
+        var content = "{{ Session::get('message', 'info') }}";
+        var Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000
+        });
+        switch(type){
+            case 'info':
+                Toast.fire({
+                icon: 'info',
+                title: content
+                })
+                break;
+            case 'warning':
+                Toast.fire({
+                icon: 'warning',
+                title: content
+                })
+                break;
+            case 'success':
+                Toast.fire({
+                icon: 'success',
+                title: content
+
+                })
+                break;
+            case 'error':
+                Toast.fire({
+                icon: 'error',
+                title: content
+                })
+                break;
+        }
+    @endif
+    &lt;/script&gt;
+</code></pre>
+
+
+
+<p><strong>resources/views/layouts/sidebar.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;aside class="main-sidebar sidebar-dark-default elevation-4"&gt;
+    &lt;!-- Brand Logo --&gt;
+    &lt;a href="index3.html" class="brand-link"&gt;
+      &lt;!-- &lt;img src="{{asset('img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"&gt; --&gt;
+      &lt;span class="brand-text font-weight-light"&gt;Employee&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;!-- Sidebar --&gt;
+    &lt;div class="sidebar"&gt;      
+      &lt;!-- Sidebar Menu --&gt;
+      &lt;nav class="mt-2"&gt;
+        &lt;ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"&gt;
+          &lt;!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library --&gt;
+          &lt;li class="nav-item menu-open"&gt;
+            &lt;a href="#" class="nav-link active"&gt;
+              &lt;i class="nav-icon fas fa-tachometer-alt"&gt;&lt;/i&gt;
+              &lt;p&gt;
+                Dashboard
+                &lt;i class="right fas fa-angle-left"&gt;&lt;/i&gt;
+              &lt;/p&gt;
+            &lt;/a&gt;
+            &lt;ul class="nav nav-treeview"&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="./index.html" class="nav-link active"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;Dashboard v1&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="./index2.html" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;Dashboard v2&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a href="pages/widgets.html" class="nav-link"&gt;
+              &lt;i class="nav-icon fas fa-th"&gt;&lt;/i&gt;
+              &lt;p&gt;
+                Widgets
+                &lt;span class="right badge badge-danger"&gt;New&lt;/span&gt;
+              &lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a href="#" class="nav-link"&gt;
+              &lt;i class="nav-icon fas fa-chart-pie"&gt;&lt;/i&gt;
+              &lt;p&gt;
+                Charts
+                &lt;i class="right fas fa-angle-left"&gt;&lt;/i&gt;
+              &lt;/p&gt;
+            &lt;/a&gt;
+            &lt;ul class="nav nav-treeview"&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="pages/charts/chartjs.html" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;ChartJS&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="pages/charts/flot.html" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;Flot&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="pages/charts/inline.html" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;Inline&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="pages/charts/uplot.html" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;uPlot&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;          
+            &lt;a href="{{ route('schedules.index') }}" class="nav-link"&gt;
+              &lt;i class="fas fa-calendar-alt nav-icon"&gt;&lt;/i&gt;
+              &lt;p&gt;
+                Schedule
+              &lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;          
+            &lt;a href="{{ route('attendances.index') }}" class="nav-link"&gt;
+              &lt;i class="fas fa-clock nav-icon"&gt;&lt;/i&gt;
+              &lt;p&gt;
+                Attendance
+              &lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a href="#" class="nav-link"&gt;
+               &lt;i class="fas fa-users nav-icon"&gt;&lt;/i&gt;
+              &lt;p&gt;
+                Users
+                &lt;i class="fas fa-angle-left right"&gt;&lt;/i&gt;
+              &lt;/p&gt;
+            &lt;/a&gt;
+            &lt;ul class="nav nav-treeview"&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="{{ route('users.index') }}" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;User&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+                &lt;a href="{{ route('roles.index') }}" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;Role&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="nav-item"&gt;
+              @can('isSuperAdmin')
+                &lt;a href="{{ route('permissions.index') }}" class="nav-link"&gt;
+                  &lt;i class="far fa-circle nav-icon"&gt;&lt;/i&gt;
+                  &lt;p&gt;Permission&lt;/p&gt;
+                &lt;/a&gt;
+                @endcan
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+      &lt;!-- /.sidebar-menu --&gt;
+    &lt;/div&gt;
+    &lt;!-- /.sidebar --&gt;
+  &lt;/aside&gt;</code></pre>
+
+
+
+<p><strong>resources/views/layouts/style.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;!-- Tell the browser to be responsive to screen width --&gt;
+&lt;meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"&gt;
+
+&lt;!-- Google Font: Source Sans Pro --&gt;
+&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"&gt;
+  &lt;!-- Font Awesome --&gt;
+  &lt;link rel="stylesheet" href="{{ asset('/plugins/fontawesome-free/css/all.min.css') }}"&gt;
+  &lt;!-- Ionicons --&gt;
+  &lt;link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css') }}"&gt;
+  &lt;!-- Theme style --&gt;
+  &lt;link rel="stylesheet" href="{{ asset('css/app.min.css')  }}"&gt;
+  &lt;!-- Tempusdominus Bootstrap 4 --&gt;
+  &lt;link rel="stylesheet" href="{{ asset('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.css') }}"&gt;
+ &lt;!-- Select2 --&gt;
+  &lt;link rel="stylesheet" href="{{ asset('plugins/select2/css/select2.min.css') }}"&gt;
+  &lt;link rel="stylesheet" href="{{ asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}"&gt;
+  &lt;!-- DataTable --&gt;
+  &lt;link rel="stylesheet" href="{{ asset('plugins/DataTables/dataTables.css')}}"&gt;
+  &lt;!-- sweetalert2 --&gt;
+&lt;link rel="stylesheet" href="{{ asset('plugins/sweetalert2/sweetalert2.min.css') }}"&gt;
+
+@yield('styles')</code></pre>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_6_Tao_giao_dien_quan_ly_users" ez-toc-data-id="#Buoc_6_Tao_giao_dien_quan_ly_users"></span>Bước 6: Tạo giao diện quản lý users<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Tiếp tục phần giao diện trong phần quyền laravel với spatie laravel permission ta tạo thư mục users để chứa các file index, create,  edit.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="700" height="222" src="./Phân quyền trong laravel với spatie laravel permission_files/phan-quyen-trong-laravel-voi-spatie-laravel-permission-2.jpg" alt="giao diện users trong phân quyền trong laravel" class="wp-image-753" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-2.jpg 700w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-2-300x95.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"><figcaption class="wp-element-caption"><strong>giao diện quản lý users trong phân quyền laravel</strong></figcaption></figure></div>
+
+
+<p><strong>resources/views/users/index.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>
+@extends('layouts.app')
+@section('page-title')
+&lt;h4 class="m-0"&gt;Users Management&lt;/h4&gt;
+@endsection
+@section('content')
+
+
+&lt;div class="col-md-12"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+      &lt;h2 class="card-title"&gt;Users Management&lt;/h2&gt;
+      &lt;div class="card-tools"&gt;
+        @can('user-create')
+        &lt;a class="btn btn-success" href="{{ route('users.create') }}"&gt;&lt;i class="fas fa-plus-square"&gt;&lt;/i&gt; Add User&lt;/a&gt;
+        @endcan
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /.card-header --&gt;
+    &lt;div class="card-body table-responsive"&gt;  
+      &lt;table class="table table-striped table-bordered"&gt;
+      &lt;tr class="bg-blue text-center"&gt;
+        &lt;th width="50px"&gt;No.&lt;/th&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+        &lt;th&gt;Roles&lt;/th&gt;
+        &lt;th width="150px"&gt;Action&lt;/th&gt;
+      &lt;/tr&gt;
+      @foreach ($users as $key =&gt; $user)
+        &lt;tr&gt;
+          &lt;td class="text-center"&gt;{{ ++$key }}&lt;/td&gt;
+          &lt;td&gt;{{ $user-&gt;name }}&lt;/td&gt;
+          &lt;td&gt;{{ $user-&gt;email }}&lt;/td&gt;
+          &lt;td class="text-center"&gt;
+            @if(!empty($user-&gt;getRoleNames()))
+              @foreach($user-&gt;getRoleNames() as $v)
+                &lt;label class="badge badge-success"&gt;{{ $v }}&lt;/label&gt;
+              @endforeach
+            @endif
+          &lt;/td&gt;
+          &lt;td class="text-center"&gt; 
+            @can('user-edit')
+            &lt;a class="btn btn-sm btn-primary" href="{{ route('users.edit',$user-&gt;id) }}"&gt;Edit&lt;/a&gt;
+            @endcan            
+            @can('user-delete')
+                {!! Form::open(['method' =&gt; 'DELETE','route' =&gt; ['users.destroy', $user-&gt;id],'style'=&gt;'display:inline']) !!}
+                    {!! Form::submit('Delete', ['class' =&gt; 'btn btn-sm btn-danger delete_confirm' ]) !!}
+                {!! Form::close() !!}
+            @endcan
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      @endforeach
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;!-- /.card-body --&gt;
+    &lt;div class="card-footer clearfix"&gt;
+      &lt;div class="float-left"&gt;
+          &lt;div class="dataTables_info"&gt;
+              Showing {{ $users-&gt;firstItem() }} to {{ $users-&gt;lastItem() }} of {{ $users-&gt;total() }} entries
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="float-right"&gt;
+          {{ $users-&gt;links() }}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- /.card --&gt;
+&lt;/div&gt;
+@endsection 
+@section('scripts')
+&lt;script type="text/javascript"&gt;
+$(function () {
+    $('.delete_confirm').click(function(event) {
+        var form =  $(this).closest("form");
+        event.preventDefault();
+        swal.fire({
+            title: 'Are you sure you want to delete this record?',
+            text: "If you delete this, it will be gone forever.",
+            icon: 'warning',
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!',
+            showDenyButton: true,
+            denyButtonText: 'Cancel',
+        })
+        .then((result) =&gt; {
+            if (result.isConfirmed) {
+                form.submit();
+             } else if (result.isDenied) {
+                Swal.fire('Your record is safe', '', 'info')
+            }
+            
+        });
+    });
+});
+&lt;/script&gt;
+@endsection</code></pre>
+
+
+
+<p><strong>resources/views/users/create.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>
+@extends('layouts.app')
+@section('breadcrumb')
+&lt;h4 class="m-0"&gt;Create New User&lt;/h4&gt;
+@endsection
+@section('content')
+&lt;!-- general form elements --&gt;
+&lt;div class="col-md-12"&gt;
+    &lt;div class="card card-default"&gt;
+        &lt;div class="card-header"&gt;
+        &lt;h2 class="card-title"&gt;Create New User&lt;/h2&gt;
+            &lt;div class="card-tools"&gt;
+                &lt;a class="btn btn-success" href="{{ route('users.index') }}"&gt;&lt;i class="fa fa-angle-double-left"&gt;&lt;/i&gt; Back To User List&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- /.card-header --&gt;
+        &lt;!-- form start --&gt;
+        {!! Form::open(array('route' =&gt; 'users.store','method'=&gt;'POST')) !!}
+        &lt;div class="card-body"&gt;        
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-6"&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Name:&lt;/strong&gt;
+                            {!! Form::text('name', null, array('value' =&gt; '{{ old("name") }}', 'placeholder' =&gt; 'Name','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('name') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Email:&lt;/strong&gt;
+                            {!! Form::text('email', null, array('value' =&gt; '{{ old("email") }}', 'placeholder' =&gt; 'Email','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('email') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Password:&lt;/strong&gt;
+                            {!! Form::password('password', array('placeholder' =&gt; 'Password','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('password') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Confirm Password:&lt;/strong&gt;
+                            {!! Form::password('confirm-password', array('placeholder' =&gt; 'Confirm Password','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('confirm-password') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;   
+                &lt;div class="col-md-6"&gt;
+                    &lt;div class="form-group"&gt;
+                        &lt;strong&gt;Role:&lt;/strong&gt;
+                        {!! Form::select('roles[]', $roles,[], array('value' =&gt; '{{ old("roles") }}', 'class' =&gt; 'form-control','multiple')) !!}
+                        &lt;span class="text-danger"&gt;{{ $errors-&gt;first('roles') }}&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;     
+            &lt;/div&gt;        
+        &lt;/div&gt;
+        &lt;!-- /.card-body --&gt;
+
+        &lt;div class="card-footer"&gt;
+            &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;        
+        &lt;/div&gt;
+        {!! Form::close() !!}
+    &lt;/div&gt;
+    &lt;!-- /.card --&gt;
+&lt;/div&gt;
+
+
+@endsection
+</code></pre>
+
+
+
+<p><strong>resources/views/users/edit.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>
+@extends('layouts.app')
+@section('breadcrumb')
+&lt;h4 class="m-0"&gt;Edit User&lt;/h4&gt;
+@endsection
+@section('content')
+&lt;!-- general form elements --&gt;
+&lt;div class="col-md-12"&gt;
+    &lt;div class="card card-default"&gt;
+        &lt;div class="card-header"&gt;
+            &lt;h2 class="card-title"&gt;Edit User&lt;/h2&gt;
+            &lt;div class="card-tools"&gt;
+                &lt;a class="btn btn-success" href="{{ route('users.index') }}"&gt;&lt;i class="fa fa-angle-double-left"&gt;&lt;/i&gt;  Back To User List&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /.card-header --&gt;
+        &lt;!-- form start --&gt;
+        {!! Form::model($user, ['method' =&gt; 'PATCH','route' =&gt; ['users.update', $user-&gt;id]]) !!}
+        &lt;div class="card-body"&gt;        
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-6"&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Name:&lt;/strong&gt;
+                            {!! Form::text('name', null, array('value' =&gt; '{{ old("name") }}', 'placeholder' =&gt; 'Name','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('name') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Email:&lt;/strong&gt;
+                            {!! Form::text('email', null, array('value' =&gt; '{{ old("email") }}', 'placeholder' =&gt; 'Email','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('email') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Password:&lt;/strong&gt;
+                            {!! Form::password('password', array('placeholder' =&gt; 'Password','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('password') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-12 col-md-12"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;strong&gt;Confirm Password:&lt;/strong&gt;
+                            {!! Form::password('confirm-password', array('placeholder' =&gt; 'Confirm Password','class' =&gt; 'form-control')) !!}
+                            &lt;span class="text-danger"&gt;{{ $errors-&gt;first('confirm-password') }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;   
+                &lt;div class="col-md-6"&gt;
+                    &lt;div class="form-group"&gt;
+                        &lt;strong&gt;Role:&lt;/strong&gt;
+                        {!! Form::select('roles[]', $roles,$userRole, array('class' =&gt; 'form-control','multiple')) !!}
+                        &lt;span class="text-danger"&gt;{{ $errors-&gt;first('roles') }}&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;     
+            &lt;/div&gt;        
+        &lt;/div&gt;
+        &lt;!-- /.card-body --&gt;
+
+        &lt;div class="card-footer"&gt;
+            &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;        
+        &lt;/div&gt;
+        {!! Form::close() !!}
+    &lt;/div&gt;
+    &lt;!-- /.card --&gt;
+&lt;/div&gt;
+@endsection
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_7_Tao_giao_dien_quan_ly_Roles" ez-toc-data-id="#Buoc_7_Tao_giao_dien_quan_ly_Roles"></span>Bước 7: Tạo giao diện quản lý Roles<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Tương tự như users thì ở đây chúng ta cũng tạo ra 3 file lần lượt là create, edit, index. Và dĩ nhiên chúng ta cũng không cần phải tạo file show vì nó thật sự không cần thiết.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="700" height="359" src="./Phân quyền trong laravel với spatie laravel permission_files/phan-quyen-trong-laravel-voi-spatie-laravel-permission-3.jpg" alt="giao diện roles trong phân quyền laravel" class="wp-image-754" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-3.jpg 700w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-3-300x154.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"><figcaption class="wp-element-caption"><strong>Giao diện Roles trong phân quyền laravel</strong></figcaption></figure></div>
+
+
+<p><strong>resources/views/roles/index.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>@extends('layouts.app')
+@section('content')
+&lt;div class="col-md-12"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;h2 class="card-title"&gt;Roles Management&lt;/h2&gt;
+        &lt;div class="card-tools"&gt;
+            &lt;a class="btn btn-success" href="{{ route('roles.create') }}"&gt;&lt;i class="fas fa-plus-square"&gt;&lt;/i&gt; New Role&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- /.card-header --&gt;
+    &lt;div class="card-body table-responsive"&gt;  
+        &lt;table class="table table-striped table-bordered"&gt;
+            &lt;tr class="bg-blue text-center"&gt;
+                &lt;th width="50px"&gt;No&lt;/th&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th width="150px"&gt;Action&lt;/th&gt;
+            &lt;/tr&gt;
+            @foreach ($roles as $key =&gt; $role)
+            &lt;tr&gt;
+                &lt;td class="text-center"&gt;{{ ++$key }}&lt;/td&gt;
+                &lt;td class="text-center"&gt;{{ $role-&gt;name }}&lt;/td&gt;
+                &lt;td class="text-center"&gt;
+                    
+                    @can('role-edit')
+                        &lt;a class="btn btn-sm btn-primary" href="{{ route('roles.edit',$role-&gt;id) }}"&gt;Edit&lt;/a&gt;
+                    @endcan
+                    @can('role-delete')
+                        {!! Form::open(['method' =&gt; 'DELETE','route' =&gt; ['roles.destroy', $role-&gt;id],'style'=&gt;'display:inline']) !!}
+                            {!! Form::submit('Delete', ['class' =&gt; 'btn btn-sm btn-danger delete_confirm']) !!}
+                        {!! Form::close() !!}
+                    @endcan
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            @endforeach
+        &lt;/table&gt;
+
+        {!! $roles-&gt;render() !!}
+    &lt;/div&gt;
+    &lt;!-- /.card-body --&gt;
+    &lt;div class="card-footer clearfix"&gt;
+        &lt;div class="float-left"&gt;
+            &lt;div class="dataTables_info"&gt;
+                Showing {{ $roles-&gt;firstItem() }} to {{ $roles-&gt;lastItem() }} of {{ $roles-&gt;total() }} entries
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="float-right"&gt;
+            {{ $roles-&gt;links() }}
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- /.card --&gt;
+&lt;/div&gt;
+@endsection 
+@section('scripts')
+&lt;script type="text/javascript"&gt;
+$(function () {
+    $('.delete_confirm').click(function(event) {
+        var form =  $(this).closest("form");
+        event.preventDefault();
+        swal.fire({
+            title: 'Are you sure you want to delete this record?',
+            text: "If you delete this, it will be gone forever.",
+            icon: 'warning',
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!',
+            showDenyButton: true,
+            denyButtonText: 'Cancel',
+        })
+        .then((result) =&gt; {
+            if (result.isConfirmed) {
+                form.submit();
+             } else if (result.isDenied) {
+                Swal.fire('Your record is safe', '', 'info')
+            }
+            
+        });
+    });
+});
+&lt;/script&gt;
+@endsection</code></pre>
+
+
+
+<p><strong>resources/views/roles/create.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>
+@extends('layouts.app')
+@section('content')
+&lt;!-- general form elements --&gt;
+&lt;div class="col-md-12"&gt;
+    &lt;div class="card card-default"&gt;
+        &lt;div class="card-header"&gt;
+            &lt;h2 class="card-title"&gt;Create New Role&lt;/h2&gt;
+                &lt;div class="card-tools"&gt;
+                &lt;a class="btn btn-success" href="{{ route('roles.index') }}"&gt;&lt;i class="fas fa-angle-double-left"&gt;&lt;/i&gt; Back To Role List&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /.card-header --&gt;
+        &lt;!-- form start --&gt;
+        {!! Form::open(array('route' =&gt; 'roles.store','method'=&gt;'POST')) !!}
+        &lt;div class="card-body"&gt;          
+
+            &lt;div class="tab-pane" id="settings"&gt;
+                &lt;div class="form-horizontal"&gt;
+                    &lt;div class="form-group"&gt;
+                        @if (count($errors) &gt; 0)
+                        &lt;div class="alert alert-danger"&gt;
+                            &lt;strong&gt;Whoops!&lt;/strong&gt; There were some problems with your input.&lt;br&gt;
+                            &lt;ul&gt;
+                            @foreach ($errors-&gt;all() as $error)
+                                &lt;li&gt;{{ $error }}&lt;/li&gt;
+                            @endforeach
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        @endif
+                    &lt;/div&gt;
+                    &lt;div class="form-group row"&gt;
+                        &lt;label for="inputName" class="col-md-2 col-form-label"&gt;Name&lt;/label&gt;
+                        &lt;div class="col-md-10"&gt;
+                            {!! Form::text('name', null, array('placeholder' =&gt; 'Name','class' =&gt; 'form-control')) !!}
+                    
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;div class="form-group row"&gt;
+                        &lt;label for="inputPermission" class="col-md-2 col-form-label"&gt;Permission&lt;/label&gt;
+                        &lt;div class="col-md-10"&gt;
+                            
+                            &lt;div class="row"&gt;                            
+                                &lt;?php 
+                                    $abc ="";
+                                    $len = count($permission);     
+                                ?&gt;
+                                @foreach($permission as $key =&gt; $value)
+                                
+                                    &lt;?php 
+                                    
+                                        if ($key === 0) {
+                                            echo '&lt;div class="col-lg-4"&gt;';
+                                        }                                
+                                        
+                                        if ($abc != substr($value-&gt;name,0,strpos($value-&gt;name,"-")) &amp;&amp; $key === 0){
+                                            $abc = substr($value-&gt;name,0,strpos($value-&gt;name,"-"));
+                                            
+                                            echo '&lt;label&gt;'.$abc. '&lt;/label&gt;&lt;div class="block"&gt;';
+
+                                        }  else if($abc != substr($value-&gt;name,0,strpos($value-&gt;name,"-")) &amp;&amp; $key !== 0){
+                                            $abc = substr($value-&gt;name,0,strpos($value-&gt;name,"-"));
+                                            echo '&lt;/div&gt;&lt;/div&gt;&lt;div class="col-lg-4"&gt;';
+                                            echo '&lt;label&gt;'.$abc. '&lt;/label&gt;&lt;div class="block"&gt;';
+                                        }  
+                                            
+                                    ?&gt;
+                                    {{ Form::checkbox('permission[]', $value-&gt;id, false, array('class' =&gt; 'name')) }}
+                                    {{ $value-&gt;name }}
+                                    &lt;br /&gt;
+                                    &lt;?php
+                                        if ($key === $len-1) {
+                                            echo '&lt;/div&gt;&lt;/div&gt;';
+                                        }
+                                    ?&gt;
+                                @endforeach
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- /.tab-pane --&gt;
+            
+        &lt;/div&gt;
+        &lt;!-- /.card-body --&gt;
+
+        &lt;div class="card-footer"&gt;
+            &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;        
+        &lt;/div&gt;
+        {!! Form::close() !!}
+    &lt;/div&gt;
+    &lt;!-- /.card --&gt;
+&lt;/div&gt;
+@endsection </code></pre>
+
+
+
+<p><strong>resources/views/roles/edit.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>
+@extends('layouts.app')
+
+@section('breadcrumb')
+&lt;h4 class="m-0"&gt;Edit Role&lt;/h4&gt;
+@endsection
+@section('content')
+&lt;!-- general form elements --&gt;
+&lt;div class="col-md-12"&gt;
+    &lt;div class="card card-default"&gt;
+        &lt;div class="card-header"&gt;
+            &lt;h2 class="card-title"&gt;Edit roles&lt;/h2&gt;
+            &lt;div class="card-tools"&gt;
+                &lt;a class="btn btn-success" href="{{ route('roles.index') }}"&gt;&lt;i class="fas fa-angle-double-left"&gt;&lt;/i&gt; Back To Role List&lt;/a&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+        &lt;!-- /.card-header --&gt;
+        &lt;!-- form start --&gt;
+        {!! Form::model($role, ['method' =&gt; 'PATCH','route' =&gt; ['roles.update', $role-&gt;id]]) !!}
+        &lt;div class="card-body"&gt; 
+            
+        &lt;div class="tab-pane" id="settings"&gt;
+                &lt;div class="form-horizontal"&gt;
+                    &lt;div class="form-group"&gt;
+                        @if (count($errors) &gt; 0)
+                        &lt;div class="alert alert-danger"&gt;
+                            &lt;strong&gt;Whoops!&lt;/strong&gt; There were some problems with your input.&lt;br&gt;
+                            &lt;ul&gt;
+                            @foreach ($errors-&gt;all() as $error)
+                                &lt;li&gt;{{ $error }}&lt;/li&gt;
+                            @endforeach
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        @endif
+                    &lt;/div&gt;
+                    &lt;div class="form-group row"&gt;
+                        &lt;label for="inputName" class="col-md-2 col-form-label"&gt;Name&lt;/label&gt;
+                        &lt;div class="col-md-10"&gt;
+                            {!! Form::text('name', null, array('placeholder' =&gt; 'Name','class' =&gt; 'form-control')) !!}
+                    
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;div class="form-group row"&gt;
+                        &lt;label for="inputPermission" class="col-md-2 col-form-label"&gt;Permission&lt;/label&gt;
+                        &lt;div class="col-md-10"&gt;
+                            
+                            &lt;div class="row"&gt;                            
+                            &lt;?php 
+                                $abc ="";
+                                $len = count($permission);
+                            ?&gt;
+                            @foreach($permission as $key =&gt; $value)
+                                &lt;?php 
+                                    if ($key === 0) {
+                                        echo '&lt;div class="col-md-4"&gt;';
+                                    }                                
+                                    
+                                    if ($abc != substr($value-&gt;name,0,strpos($value-&gt;name,"-")) &amp;&amp; $key === 0){
+                                        $abc = substr($value-&gt;name,0,strpos($value-&gt;name,"-"));
+                                        
+                                        echo '&lt;label&gt;'.$abc. '&lt;/label&gt;&lt;div class="block"&gt;';
+
+                                    }  else if($abc != substr($value-&gt;name,0,strpos($value-&gt;name,"-")) &amp;&amp; $key !== 0){
+                                        $abc = substr($value-&gt;name,0,strpos($value-&gt;name,"-"));
+                                        echo '&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-4"&gt;';
+                                        echo '&lt;label&gt;'.$abc. '&lt;/label&gt;&lt;div class="block"&gt;';
+                                    }                    
+                                ?&gt;
+                                {{ Form::checkbox('permission[]', $value-&gt;id, in_array($value-&gt;id, $rolePermissions) ? true : false, array('class' =&gt; 'name')) }}
+                                {{ $value-&gt;name }}
+                                &lt;br/&gt;
+                                &lt;?php
+                                    if ($key === $len-1) {
+                                        echo '&lt;/div&gt;&lt;/div&gt;';
+                                    }
+                                ?&gt;
+                            @endforeach
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- /.tab-pane --&gt;
+
+
+
+                  
+        &lt;/div&gt;
+        &lt;!-- /.card-body --&gt;
+
+        &lt;div class="card-footer"&gt;
+            &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;        
+        &lt;/div&gt;
+        {!! Form::close() !!}
+    &lt;/div&gt;
+    &lt;!-- /.card --&gt;
+&lt;/div&gt;
+
+
+@endsection
+</code></pre>
+
+
+
+<p>Trong phân quyền cho <a href="https://hanhtinhcongnghe.com/cai-php-tren-macbook/" target="_blank" rel="noreferrer noopener">laravel</a> với spatie laravel permissions thì cái danh sách permission ở role sẽ dài ngoằng không đẹp, nên mình đã tạo group cho nó bằng cách sử dụng cụm từ trước dấu gạch ngang (-) để làm label. Nên khi tạo permissions bạn cần phải tạo cho đúng rule để có kết quả như mình đã làm.</p>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_7_Tao_giao_dien_quan_ly_cho_permissions" ez-toc-data-id="#Buoc_7_Tao_giao_dien_quan_ly_cho_permissions"></span>Bước 7: Tạo giao diện quản lý cho permissions<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Ở một số chia sẽ trên mạng về <strong>hướng dẫn phân quyền trong laravel</strong> thường sẽ không hướng dẫn tạo giao diện quản lý cho permission cũng như permission controller. Nhưng ở đây mình muốn chia sẽ luôn để khi tạo permissions mới thì mọi người có thể tạo luôn mà không cần vào database hay chạy seeder.</p>
+
+
+
+<p>Và ở phần này chúng ta chỉ cần tạo 1 file index.blade.php thôi vì edit và create tôi đã sử dụng modal form để thay thế.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="700" height="367" src="./Phân quyền trong laravel với spatie laravel permission_files/phan-quyen-trong-laravel-voi-spatie-laravel-permission-4.jpg" alt="giao diện permission trong phần quyền laravel" class="wp-image-756" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-4.jpg 700w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/phan-quyen-trong-laravel-voi-spatie-laravel-permission-4-300x157.jpg 300w" sizes="(max-width: 700px) 100vw, 700px"><figcaption class="wp-element-caption"><strong>Giao diện quản lý permission trong phân quyền laravel</strong></figcaption></figure></div>
+
+
+<p><strong>resources/views/permisisons/index.blade.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>@extends('layouts.app')
+
+@section('title', ' | List Permissions')
+
+@section('content')
+&lt;div class="col-md-12"&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="card-header"&gt;
+            &lt;h2 class="card-title"&gt;Permission Management&lt;/h2&gt;
+            &lt;div class="card-tools"&gt;
+                &lt;button type="button" class="btn btn-success btn-create" data-toggle="modal" data-target="#PermissionModal"&gt;
+                &lt;i class="fas fa-plus-square"&gt;&lt;/i&gt; Add Permission
+                &lt;/button&gt;
+            &lt;/div&gt;
+            
+        &lt;/div&gt;
+        &lt;!-- /.card-header --&gt;
+        &lt;div class="card-body table-responsive"&gt;  
+            &lt;table id="permission_table" class="table table-bordered data-table"&gt;
+                &lt;thead&gt;
+                    &lt;tr class="bg-blue"&gt;                    
+                        &lt;th width="50px"&gt;No&lt;/th&gt;
+                        &lt;th&gt;Name&lt;/th&gt;
+                        &lt;th width="150px"&gt;Action&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;!-- /.card-body --&gt;
+    &lt;/div&gt;
+    &lt;!-- /.card --&gt;
+&lt;/div&gt;
+&lt;!-- Modal UpadateOrCreate Permission --&gt;
+
+&lt;div class="modal fade" id="PermissionModal"&gt;
+    &lt;div class="modal-dialog modal-md"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;form method="POST" action="" id="permissionForm"&gt;        
+            @csrf
+            &lt;div class="modal-header"&gt;
+                &lt;h4 class="modal-title"&gt;Add permission&lt;/h4&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;input type="hidden" name="_method" id="permission_method" value="POST"&gt;
+                &lt;input type="hidden" name="id" id="id" value=""&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label for="name" class="col-sm-2 control-label"&gt;Name&lt;/label&gt;
+                    &lt;div class="col-sm-12"&gt;
+                        &lt;input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Enter Name" value="" required&gt;
+                        @error('name')
+                            &lt;p class="mt-2 mb-0 error text-danger"&gt;{{ $message }}&lt;/p&gt;
+                        @enderror
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer justify-content-between"&gt;
+                &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;
+                &lt;button type="submit" class="btn btn-primary" id="savedata"&gt;Save&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+        &lt;!-- /.modal-content --&gt;
+    &lt;/div&gt;
+    &lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;
+&lt;!-- /.modal --&gt;
+@endsection
+
+@section('scripts')
+
+&lt;script type="text/javascript"&gt;
+  $(function () {
+
+    var change = $('#permission_table').DataTable({
+            'responsive': true,
+            //'fixedHeader': true,
+            'autoWidth': false,
+            'processing': true,
+            'serverside': true,
+            "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "Show all"]],
+            'ajax': {
+                'dataSrc': 'permissions'
+            },
+            'columns':[   
+                {
+                    className:      'dt-control',
+                    orderable:      false,
+                    data:           null,
+                    defaultContent: ''
+                },
+                { data: 'name' },
+                { data: 'id',
+                    orderable: false,
+                    render: function(data){
+                        return '&lt;button class="btn btn-sm btn-info btn-edit mr-1" data-id="'+data+'"&gt;Edit&lt;/button&gt;'+
+                                '&lt;button class="btn btn-sm btn-danger btn-delete" data-id="'+data+'"&gt;Delete&lt;/button&gt;';
+                    }
+                }
+            ],
+            order: [[1, 'desc']],
+            "columnDefs": [
+				{ 'className': 'dt-center','targets': '_all' }
+			]
+        });
+        
+        //Plus detail    
+        $('#permission_table tbody').on('click', 'td.dt-control', function () {
+            var tr = $(this).closest('tr');
+            var row = change.row( tr );
+        
+            if ( row.child.isShown() ) {
+                row.child.hide();
+                tr.removeClass('shown');
+            }
+            else {
+                row.child( format(row.data()) ).show();
+                tr.addClass('shown');
+            }
+        } );
+        function format ( rowData ) {
+            return '&lt;table class="table table-bordered"&gt;'+
+                '&lt;tr style="background: #f9f9f9"&gt;'+
+                    '&lt;th width="30%"&gt;Title&lt;/th&gt;'+
+                    '&lt;th width="70%"&gt;Details&lt;/th&gt;'+
+                '&lt;/tr&gt;'+
+                '&lt;tr&gt;'+
+                    '&lt;td&gt;ID:&lt;/td&gt;'+
+                    '&lt;td&gt;'+rowData.id+'&lt;/td&gt;'+
+                '&lt;/tr&gt;'+
+                '&lt;tr&gt;'+
+                    '&lt;td&gt;Name:&lt;/td&gt;'+
+                    '&lt;td&gt;'+rowData.name+'&lt;/td&gt;'+
+                '&lt;/tr&gt;'+
+                '&lt;tr&gt;'+
+                    '&lt;td&gt;Created at:&lt;/td&gt;'+
+                    '&lt;td&gt;'+Date(rowData.created_at)+'&lt;/td&gt;'+
+                '&lt;/tr&gt;'+
+            '&lt;/table&gt;'; 
+        };
+
+        //create
+        $('#permission_table').on('click', '.btn-create', function (e) {
+            e.preventDefault;
+            var url = '{{ route("permissions.store") }}';
+            $('.modal-title').html("Create permission");
+            $('#permissionForm').attr('action', url);
+            $('#permission_method').attr('value', 'POST');
+            $('#id').val('');        
+        });
+        //edit
+        $('#permission_table').on('click', '.btn-edit', function () {
+            var permission_id = $(this).data('id');
+            var url = '{{ route("permissions.update","") }}' +'/'+ permission_id;
+            $.ajax({
+                cache: false,
+                success: function(data){
+                    $('#PermissionModal').modal('show');
+                    $('.modal-title').html("Edit permission");
+                    $.each(data.permissions, function(index, value) {
+                        if(value.id === permission_id){
+                            $('#id').val(permission_id);
+                            $('#name').val(value.name);
+                            $('#permissionForm').attr('action', url);
+                            $('#permission_method').attr('value', 'PATCH');
+                         }
+                    });
+                }
+            });
+        });
+        $('#PermissionModal').on('hidden.bs.modal', function () {
+            $(this).find('form').trigger('reset');  
+            $('.error').html('');
+            $('#name').removeClass("is-invalid");
+        });
+
+        //Delete         
+        $('#permission_table').on("click", ".btn-delete", function() { 
+            var permission_id = $(this).data('id');
+            var url = '{{ route("permissions.destroy","") }}' +'/'+ permission_id;
+            Swal.fire({
+                title: 'Are you sure you want to delete this record?',
+                text: "If you delete this, it will be gone forever.",
+                icon: 'warning',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!',
+                showDenyButton: true,
+                denyButtonText: 'Cancel',
+            }).then((result) =&gt; {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: url,
+                        type: 'DELETE',
+                        cache: false,
+                        data: {
+                            _token:'{{ csrf_token() }}',
+                        },
+                        success: function (response){
+                            Swal.fire(
+                                "Deleted!", 
+                                "Your file has been deleted.", 
+                                "success"
+                                ).then(function(){ 
+                                    location.reload();
+                                });                            
+                        }
+                    });
+                }else if (result.isDenied) {
+                    Swal.fire('Your record is safe', '', 'info')
+                }         
+                
+            });            
+        });
+
+        @if(count($errors))
+            $('#PermissionModal').modal('show');
+        @endif        
+
+});
+&lt;/script&gt;
+@endsection
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="Buoc_8_tao_seeder_de_them_du_lieu_vao_bang" ez-toc-data-id="#Buoc_8_tao_seeder_de_them_du_lieu_vao_bang"></span>Bước 8: tạo seeder để thêm dữ liệu vào bảng<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p>Bạn gõ lần lượt 2 dòng lệnh dưới đây để tạo seeder có tên PermissionTableSeeder.php và CreateAdminUserSeeder.php</p>
+
+
+
+<pre class="wp-block-code"><code>php artisan make:seeder PermissionTableSeeder
+
+//và sau đó
+
+php artisan make:seeder CreateAdminUserSeeder</code></pre>
+
+
+
+<p>Và tiếp theo là lần lượt thêm vào nội dung vào 2 file đó.</p>
+
+
+
+<p><strong>database/seeds/PermissionTableSeeder.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;?php
+  
+namespace Database\Seeders;
+  
+use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Permission;
+  
+class PermissionTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $permissions = [
+            'user-menu',
+            'user-list',
+            'user-create',
+            'user-edit',
+            'user-delete',
+
+            'role-menu',
+            'role-list',
+            'role-create',
+            'role-edit',
+            'role-delete',
+
+            'permission-menu',
+            'permission-list',
+            'permission-create',
+            'permission-edit',
+            'permission-delete',
+
+        ];
+     
+        foreach ($permissions as $permission) {
+             Permission::create(['name' =&gt; $permission]);
+        }
+    }
+}</code></pre>
+
+
+
+<p><strong>database/seeds/CreateAdminUserSeeder.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>&lt;?php
+  
+namespace Database\Seeders;
+  
+use Illuminate\Database\Seeder;
+use App\Models\User;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+  
+class CreateAdminUserSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $user = User::create([
+            'name' =&gt; 'Super Admin', 
+            'email' =&gt; 'superadmin@gmail.com',
+            'password' =&gt; bcrypt('123456')
+        ]);
+    
+        $role = Role::create(['name' =&gt; 'Super-Admin']);
+    
+        $permissions = Permission::pluck('id','id')-&gt;all();
+   
+        $role-&gt;syncPermissions($permissions);
+     
+        $user-&gt;assignRole([$role-&gt;id]);
+    }
+}</code></pre>
+
+
+
+<p>Sau khi đã làm đầy đủ cho 2 file seeder trên thì chúng ta chạy lệnh trong command lần lượt 2 câu lệnh bên dưới.</p>
+
+
+
+<pre class="wp-block-code"><code>php artisan db:seed --class=PermissionTableSeeder
+
+php artisan db:seed --class=CreateAdminUserSeeder</code></pre>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Thiet_lap_quyen_Super_Admin_trong_phan_quyen_laravel" ez-toc-data-id="#Thiet_lap_quyen_Super_Admin_trong_phan_quyen_laravel"></span>Thiết lập quyền Super Admin trong phần quyền laravel<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Trong phân quyền thì hầu hết đều có role Super Admin, role này dùng cho người quản trị có quyền cao nhất và có thể xử lý tất cả các tác vụ trong hệ thống của bạn. Và đặt biệt chỉ có role này mới có quyền tạo ra permissions list.</p>
+
+
+
+<p>Để quyền Super Admin có thể chạy thì chúng ta vào trong file AuthServiceProvider.php và thêm vào đoạn code bên dưới.</p>
+
+
+
+<p><strong>app/Providers/AuthServiceProvider.php</strong></p>
+
+
+
+<pre class="wp-block-code"><code>public function boot()
+    {
+        $this-&gt;registerPolicies();
+
+        // Implicitly grant "Super-Admin" role all permission checks using can()
+        Gate::before(function ($user, $ability) {
+            return $user-&gt;hasRole('Super-Admin') ? true : null;
+        });
+
+        /* define a admin user role */
+        Gate::define('isSuperAdmin', function($user) {
+            return $user-&gt;role == 'Super-Admin';
+         });
+    }</code></pre>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Ket_luan" ez-toc-data-id="#Ket_luan"></span>Kết luận<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Trên đây là hướng dẫn chi tiết nhất về <strong>cách phân quyền trong laravel</strong> với sự hỗ trợ của spatie laravel permission. Mặc dù phân quyền trong laravel nhìn đơn giản vậy nhưng khá nhức đầu và phức tạp đối với những người tự học laravel.</p>
+
+
+
+<p>Và để hướng dẫn phân quyền trên hoàn hảo hơn thì bạn có thể chỉnh sửa và chế biến nó một chút theo ý của riêng mình.</p>
+	</div><!-- .single-content -->
+
+	<footer class="single-footer">
+	    
+	    <div class="single-share">
+            <ul class="single-share-links">
+                <li class="single-share-label">
+                    <span class="single-share-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </span>
+                </li>
+                <li class="facebook has-span">
+                    <a class="facebook" href="http://www.facebook.com/sharer.php?u=https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" rel="nofollow" title="Facebook" target="_blank"><span>Facebook</span></a>
+                </li>
+                <li class="twitter has-span">
+                    <a class="twitter" href="http://twitter.com/share?url=https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" rel="nofollow" title="Twitter" target="_blank"><span>Twitter</span></a>
+                </li>
+                <li class="linkedin">
+                    <a class="linkedin" href="http://www.linkedin.com/cws/share?url=https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" rel="nofollow" title="LinkedIn" target="_blank"></a>
+                </li>
+                <li class="instagram has-span">
+                    <a class="instagram" href="https://www.instagram.com/sharer.php?u=https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" rel="nofollow" title="instagram" target="_blank"></a>
+                </li>
+                <li class="pinterest has-span">
+                    <a class="pinterest" href="http://pinterest.com/pin/create/button/?url=https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" rel="nofollow" title="Pinterest" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+       
+	</footer><!-- .entry-footer -->
+</article><!-- #post-640 -->
+
+<div id="comments" class="comments-area">
+
+			<div class="comments-title">
+			<span>Có 2 bình luận</span>		</div><!-- .comments-title -->
+
+		
+		<ol class="comment-list">
+					<li id="comment-262" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-262" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Phân quyền trong laravel với spatie laravel permission_files/9eacf40ac2d3207233524ae498a82b39.png" srcset="https://secure.gravatar.com/avatar/9eacf40ac2d3207233524ae498a82b39?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50" loading="lazy" decoding="async">						<b class="fn">trinh</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#comment-262"><time datetime="2023-10-11T09:59:51+07:00">October 11, 2023 at 9:59 am</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>dạ chào anh chị ạ, em có tham khảo và làm giống bài trên nhưng khi vào index users thì lại k có quyền vào ạ(USER DOES NOT HAVE THE RIGHT PERMISSIONS.) Anh/chị giải đáp giúp e với ạ</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#comment-262" data-commentid="262" data-postid="640" data-belowelement="div-comment-262" data-respondelement="respond" data-replyto="Reply to trinh" aria-label="Reply to trinh">Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-266" class="comment byuser comment-author-phoenix51706 odd alt depth-2">
+			<article id="div-comment-266" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Phân quyền trong laravel với spatie laravel permission_files/ef50d856a908ee1bf3fba5c46e08ebf2.png" srcset="https://secure.gravatar.com/avatar/ef50d856a908ee1bf3fba5c46e08ebf2?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50" loading="lazy" decoding="async">						<b class="fn">Admin</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#comment-266"><time datetime="2023-10-13T07:36:43+07:00">October 13, 2023 at 7:36 am</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Nếu bạn đang vào bằng Super Admin thì thử kiểm tra lại phần thiết lập super admin.<br>
+Các user còn lại thì bạn xem đoạn function __construct()<br>
+    {<br>
+         $this-&gt;middleware(‘permission:user-list|user-create|user-edit|user-delete’, [‘only’ =&gt; [‘index’,’store’]]);<br>
+         $this-&gt;middleware(‘permission:user-create’, [‘only’ =&gt; [‘create’,’store’]]);<br>
+         $this-&gt;middleware(‘permission:user-edit’, [‘only’ =&gt; [‘edit’,’update’]]);<br>
+         $this-&gt;middleware(‘permission:user-delete’, [‘only’ =&gt; [‘destroy’]]);<br>
+    }<br>
+đã đúng chưa nhé.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+			<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Để lại bình luận</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#respond" style="display:none;">Huỷ</a></small></h3><form action="https://hanhtinhcongnghe.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="novalidate"><p class="comment-notes">Email của bạn sẽ được bảo mật.</p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required=""></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required=""></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" autocomplete="email" required=""></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Đăng bình luận"> <input type="hidden" name="comment_post_ID" value="640" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+					
+				</div>
+				<div class="main-sidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 13907.4px;">
+					
+<!-- #secondary -->
+				
+				<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: absolute; transform: translateY(11999.9px); top: 0px; height: auto !important; width: 359px;"><aside id="secondary" class="widget-area" style="height: auto !important;">	
+	<section id="block-11" class="widget widget_block">
+<!-- qcao sidebar -->
+<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-8197448876088539" data-ad-slot="2759598196" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_1_host" style="border: none; height: 280px; width: 359px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:359px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="359" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Phân quyền trong laravel với spatie laravel permission_files/ads.html" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPel-Zzk2YUDFapEwgUdtuwBuA" data-load-complete="true"></iframe></div></ins>
+</section><section id="block-9" class="widget widget_block"><p><iframe loading="lazy" src="./Phân quyền trong laravel với spatie laravel permission_files/page.html" width="340" height="500" style="border:none;overflow:hidden" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></p></section><section id="block-10" class="widget widget_block"><div class="widget-title"><span>Bình luận</span></div><div class="wp-widget-group__inner-blocks"><ol class="has-avatars has-dates has-excerpts wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><img alt="" src="./Phân quyền trong laravel với spatie laravel permission_files/ef50d856a908ee1bf3fba5c46e08ebf2(1).png" srcset="https://secure.gravatar.com/avatar/ef50d856a908ee1bf3fba5c46e08ebf2?s=96&amp;d=mm&amp;r=g 2x" class="avatar avatar-48 photo wp-block-latest-comments__comment-avatar" height="48" width="48"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://hanhtinhcongnghe.com/author/phoenix51706/">Admin</a> on <a class="wp-block-latest-comments__comment-link" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#comment-266">Phân quyền trong laravel với spatie laravel permission</a><time datetime="2023-10-13T07:36:43+07:00" class="wp-block-latest-comments__comment-date">October 13, 2023</time></footer><div class="wp-block-latest-comments__comment-excerpt"><p>Nếu bạn đang vào bằng Super Admin thì thử kiểm tra lại phần thiết lập super admin. Các user còn…</p>
+</div></article></li><li class="wp-block-latest-comments__comment"><img alt="" src="./Phân quyền trong laravel với spatie laravel permission_files/9eacf40ac2d3207233524ae498a82b39(1).png" srcset="https://secure.gravatar.com/avatar/9eacf40ac2d3207233524ae498a82b39?s=96&amp;d=mm&amp;r=g 2x" class="avatar avatar-48 photo wp-block-latest-comments__comment-avatar" height="48" width="48"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">trinh</span> on <a class="wp-block-latest-comments__comment-link" href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#comment-262">Phân quyền trong laravel với spatie laravel permission</a><time datetime="2023-10-11T09:59:51+07:00" class="wp-block-latest-comments__comment-date">October 11, 2023</time></footer><div class="wp-block-latest-comments__comment-excerpt"><p>dạ chào anh chị ạ, em có tham khảo và làm giống bài trên nhưng khi vào index users thì…</p>
+</div></article></li><li class="wp-block-latest-comments__comment"><img alt="" src="./Phân quyền trong laravel với spatie laravel permission_files/7e82066c70acbc17a50da4fd272ab0c6.png" srcset="https://secure.gravatar.com/avatar/7e82066c70acbc17a50da4fd272ab0c6?s=96&amp;d=mm&amp;r=g 2x" class="avatar avatar-48 photo wp-block-latest-comments__comment-avatar" height="48" width="48"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">hoang</span> on <a class="wp-block-latest-comments__comment-link" href="https://hanhtinhcongnghe.com/tao-form-validate-cho-wordpress-comment/#comment-14">3 bước tạo form validate cho wordpress comment</a><time datetime="2023-06-19T11:09:38+07:00" class="wp-block-latest-comments__comment-date">June 19, 2023</time></footer><div class="wp-block-latest-comments__comment-excerpt"><p>hoang1231231</p>
+</div></article></li><li class="wp-block-latest-comments__comment"><img alt="" src="./Phân quyền trong laravel với spatie laravel permission_files/ea215660e7102613e5ff1fdb1d75be09.png" srcset="https://secure.gravatar.com/avatar/ea215660e7102613e5ff1fdb1d75be09?s=96&amp;d=mm&amp;r=g 2x" class="avatar avatar-48 photo wp-block-latest-comments__comment-avatar" height="48" width="48"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://hanhtinhcongnghe.com/author/">admin</a> on <a class="wp-block-latest-comments__comment-link" href="https://hanhtinhcongnghe.com/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepad/#comment-4">Mẹo vặt giúp tận dụng hết tính năng tìm kiếm và thay thế trong notepad++</a><time datetime="2022-05-30T15:18:57+07:00" class="wp-block-latest-comments__comment-date">May 30, 2022</time></footer><div class="wp-block-latest-comments__comment-excerpt"><p>tss</p>
+</div></article></li></ol></div></section>
+	            <div class="related-post">
+                <div class="related-header">
+					<span>Bài liên quan</span>
+				</div>
+                <ul>
+                                    <li>
+                        <div class="related-thumb">
+                            <a href="https://hanhtinhcongnghe.com/upload-hinh-anh-trong-laravel-voi-spatie-media-library/" rel="bookmark" title="Upload hình ảnh trong laravel với spatie media library"><img width="620" height="320" src="./Phân quyền trong laravel với spatie laravel permission_files/upload-hinh-anh-trong-laravel-voi-spatie.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="upload hình ảnh trong laravel bằng spatie" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2024/01/upload-hinh-anh-trong-laravel-voi-spatie.webp 620w, https://hanhtinhcongnghe.com/wp-content/uploads/2024/01/upload-hinh-anh-trong-laravel-voi-spatie-300x155.webp 300w" sizes="(max-width: 620px) 100vw, 620px"></a>
+                        </div>
+                        <div class="related-content">
+                            <h3 class="related-title">
+                                <a href="https://hanhtinhcongnghe.com/upload-hinh-anh-trong-laravel-voi-spatie-media-library/" rel="bookmark" title="Upload hình ảnh trong laravel với spatie media library">Upload hình ảnh trong laravel với spatie media library</a>
+                            </h3>
+                                                    </div> 
+                    </li>
+                                    <li>
+                        <div class="related-thumb">
+                            <a href="https://hanhtinhcongnghe.com/cach-tao-website-da-ngon-ngu-trong-laravel-10/" rel="bookmark" title="Cách tạo website đa ngôn ngữ trong laravel 10"><img width="1200" height="628" src="./Phân quyền trong laravel với spatie laravel permission_files/website-da-ngon-ngu-voi-laravel-10.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="website đa ngôn ngữ với laravel 10" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2023/09/website-da-ngon-ngu-voi-laravel-10.webp 1200w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/09/website-da-ngon-ngu-voi-laravel-10-300x157.webp 300w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/09/website-da-ngon-ngu-voi-laravel-10-1024x536.webp 1024w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/09/website-da-ngon-ngu-voi-laravel-10-768x402.webp 768w" sizes="(max-width: 1200px) 100vw, 1200px"></a>
+                        </div>
+                        <div class="related-content">
+                            <h3 class="related-title">
+                                <a href="https://hanhtinhcongnghe.com/cach-tao-website-da-ngon-ngu-trong-laravel-10/" rel="bookmark" title="Cách tạo website đa ngôn ngữ trong laravel 10">Cách tạo website đa ngôn ngữ trong laravel 10</a>
+                            </h3>
+                                                    </div> 
+                    </li>
+                                    <li>
+                        <div class="related-thumb">
+                            <a href="https://hanhtinhcongnghe.com/tao-web-push-notifications-trong-laravel/" rel="bookmark" title="Tạo web push notifications trong laravel với firebase"><img width="860" height="574" src="./Phân quyền trong laravel với spatie laravel permission_files/laravel-web-push-notification.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Laravel web push notification firebase" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2023/06/laravel-web-push-notification.webp 860w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/06/laravel-web-push-notification-300x200.webp 300w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/06/laravel-web-push-notification-768x513.webp 768w" sizes="(max-width: 860px) 100vw, 860px"></a>
+                        </div>
+                        <div class="related-content">
+                            <h3 class="related-title">
+                                <a href="https://hanhtinhcongnghe.com/tao-web-push-notifications-trong-laravel/" rel="bookmark" title="Tạo web push notifications trong laravel với firebase">Tạo web push notifications trong laravel với firebase</a>
+                            </h3>
+                                                    </div> 
+                    </li>
+                                    <li>
+                        <div class="related-thumb">
+                            <a href="https://hanhtinhcongnghe.com/upload-va-remove-hinh-anh-trong-laravel/" rel="bookmark" title="Upload và remove hình ảnh trong laravel"><img width="960" height="593" src="./Phân quyền trong laravel với spatie laravel permission_files/upload-va-remove-hinh-anh-trong-laravel.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="upload và remove hình ảnh trong laravel" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2023/05/upload-va-remove-hinh-anh-trong-laravel.webp 960w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/05/upload-va-remove-hinh-anh-trong-laravel-300x185.webp 300w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/05/upload-va-remove-hinh-anh-trong-laravel-768x474.webp 768w" sizes="(max-width: 960px) 100vw, 960px"></a>
+                        </div>
+                        <div class="related-content">
+                            <h3 class="related-title">
+                                <a href="https://hanhtinhcongnghe.com/upload-va-remove-hinh-anh-trong-laravel/" rel="bookmark" title="Upload và remove hình ảnh trong laravel">Upload và remove hình ảnh trong laravel</a>
+                            </h3>
+                                                    </div> 
+                    </li>
+                                    <li>
+                        <div class="related-thumb">
+                            <a href="https://hanhtinhcongnghe.com/upload-nhieu-anh-trong-laravel-bang-ajax/" rel="bookmark" title="Upload nhiều ảnh trong laravel bằng ajax"><img width="960" height="594" src="./Phân quyền trong laravel với spatie laravel permission_files/upload-nhieu-anh-trong-laravel-bang-ajax.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Upload nhiều ảnh trong laravel bằng ajax" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2023/03/upload-nhieu-anh-trong-laravel-bang-ajax.webp 960w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/03/upload-nhieu-anh-trong-laravel-bang-ajax-300x186.webp 300w, https://hanhtinhcongnghe.com/wp-content/uploads/2023/03/upload-nhieu-anh-trong-laravel-bang-ajax-768x475.webp 768w" sizes="(max-width: 960px) 100vw, 960px"></a>
+                        </div>
+                        <div class="related-content">
+                            <h3 class="related-title">
+                                <a href="https://hanhtinhcongnghe.com/upload-nhieu-anh-trong-laravel-bang-ajax/" rel="bookmark" title="Upload nhiều ảnh trong laravel bằng ajax">Upload nhiều ảnh trong laravel bằng ajax</a>
+                            </h3>
+                                                    </div> 
+                    </li>
+                                </ul>
+            </div>
+        </aside></div></div>
+			</div>
+			
+		</div>
+		
+	</main><!-- #main -->
+
+
+	<footer id="colophon" class="site-footer">
+		<div class="footer-top">
+			<div class="container-xl">
+				<div class="footer-top-inner">
+					<div class="col-lg-4 col-md-4 d-flex align-items-center">
+						<div class="footer-top-left">
+							<div class="footer-logo">
+								<a href="https://hanhtinhcongnghe.com/" class="custom-logo-link" rel="home"><img width="303" height="76" src="./Phân quyền trong laravel với spatie laravel permission_files/htcn-logo.webp" class="custom-logo" alt="logo hành tinh công nghệ" decoding="async" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo.webp 303w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/htcn-logo-300x75.webp 300w" sizes="(max-width: 303px) 100vw, 303px"></a>							</div>
+							<div class="footer-about">
+							                        				<p>Hành Tinh Công Nghệ</p>
+                    											    
+								<span>
+								Chuyên trang công nghệ hàng đầu Việt Nam, nơi giao lưu, chia sẽ kiến thức, bài viết về các chủ đề công nghệ, công nghệ thông tin, máy tính, máy in, di động.
+								</span>
+							
+							</div>
+						</div>						
+					</div>
+					<div class="col-lg-4 col-md-4 d-none d-md-block">
+						<div class="footer-top-center">
+							<div class="footer-title">
+								<span>Xem Nhiều Nhất</span>
+							</div>
+															<ul class="post-popular">
+																				<li class="post-popular-item">
+												<div class="post-popular-thumbnail">
+													<img width="590" height="334" src="./Phân quyền trong laravel với spatie laravel permission_files/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepadd.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="notepad plus tìm và thay thế trong hàng loạt file" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepadd.jpg 590w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepadd-300x170.jpg 300w" sizes="(max-width: 590px) 100vw, 590px">												</div>
+												<div class="post-popular-header">											
+													<a href="https://hanhtinhcongnghe.com/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepad/" title="Mẹo vặt giúp tận dụng hết tính năng tìm kiếm và thay thế trong notepad++">
+													Mẹo vặt giúp tận dụng hết tính năng tìm kiếm và thay thế trong notepad++													</a>
+												</div>
+											</li>
+																					<li class="post-popular-item">
+												<div class="post-popular-thumbnail">
+													<img width="640" height="320" src="./Phân quyền trong laravel với spatie laravel permission_files/laravel-7-auth.png" class="attachment-medium_large size-medium_large wp-post-image" alt="phân quyền trong laravel với spatie laravel permisison" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png 700w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth-300x150.png 300w" sizes="(max-width: 640px) 100vw, 640px">												</div>
+												<div class="post-popular-header">											
+													<a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" title="Phân quyền trong laravel với spatie laravel permission">
+													Phân quyền trong laravel với spatie laravel permission													</a>
+												</div>
+											</li>
+																					<li class="post-popular-item">
+												<div class="post-popular-thumbnail">
+													<img width="640" height="350" src="./Phân quyền trong laravel với spatie laravel permission_files/jquery-form-validate-xac-thu-du-lieu-truoc-khi-gui.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="jquery html form validate xác thực dữ liệu trược khi gửi đến server" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/jquery-form-validate-xac-thu-du-lieu-truoc-khi-gui.jpg 709w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/jquery-form-validate-xac-thu-du-lieu-truoc-khi-gui-300x164.jpg 300w" sizes="(max-width: 640px) 100vw, 640px">												</div>
+												<div class="post-popular-header">											
+													<a href="https://hanhtinhcongnghe.com/form-validate-bang-jquery/" title="Form validate bằng jquery">
+													Form validate bằng jquery													</a>
+												</div>
+											</li>
+																		</ul>
+													</div>						
+					</div>
+					<div class="col-lg-4 col-md-4 d-none d-md-block">
+						<div class="footer-top-right">
+							<div class="footer-title">
+								<span>Bình Luận Nhiều</span>
+							</div>
+															<ul class="post-popular">
+																				<li class="post-popular-item">
+												<div class="post-popular-thumbnail">
+													<img width="640" height="320" src="./Phân quyền trong laravel với spatie laravel permission_files/laravel-7-auth.png" class="attachment-medium_large size-medium_large wp-post-image" alt="phân quyền trong laravel với spatie laravel permisison" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth.png 700w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/laravel-7-auth-300x150.png 300w" sizes="(max-width: 640px) 100vw, 640px">												</div>
+												<div class="post-popular-header">
+													<a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/" title="Phân quyền trong laravel với spatie laravel permission">
+													Phân quyền trong laravel với spatie laravel permission													</a>
+													<a href="https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#comments" class="comment-link">2 bình luận</a>												</div>										
+												
+											</li>
+																					<li class="post-popular-item">
+												<div class="post-popular-thumbnail">
+													<img width="590" height="334" src="./Phân quyền trong laravel với spatie laravel permission_files/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepadd.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="notepad plus tìm và thay thế trong hàng loạt file" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepadd.jpg 590w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/04/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepadd-300x170.jpg 300w" sizes="(max-width: 590px) 100vw, 590px">												</div>
+												<div class="post-popular-header">
+													<a href="https://hanhtinhcongnghe.com/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepad/" title="Mẹo vặt giúp tận dụng hết tính năng tìm kiếm và thay thế trong notepad++">
+													Mẹo vặt giúp tận dụng hết tính năng tìm kiếm và thay thế trong notepad++													</a>
+													<a href="https://hanhtinhcongnghe.com/meo-vat-giup-tan-dung-het-tinh-nang-tim-kiem-va-thay-the-trong-notepad/#comments" class="comment-link">1 bình luận</a>												</div>										
+												
+											</li>
+																					<li class="post-popular-item">
+												<div class="post-popular-thumbnail">
+													<img width="640" height="365" src="./Phân quyền trong laravel với spatie laravel permission_files/wordpress-comment-form-validate.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="Wordpress comment form validate" decoding="async" loading="lazy" srcset="https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/wordpress-comment-form-validate.webp 760w, https://hanhtinhcongnghe.com/wp-content/uploads/2022/05/wordpress-comment-form-validate-300x171.webp 300w" sizes="(max-width: 640px) 100vw, 640px">												</div>
+												<div class="post-popular-header">
+													<a href="https://hanhtinhcongnghe.com/tao-form-validate-cho-wordpress-comment/" title="3 bước tạo form validate cho wordpress comment">
+													3 bước tạo form validate cho wordpress comment													</a>
+													<a href="https://hanhtinhcongnghe.com/tao-form-validate-cho-wordpress-comment/#comments" class="comment-link">1 bình luận</a>												</div>										
+												
+											</li>
+																		</ul>
+													</div>
+					</div>
+			
+				
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container-xl">
+				<div class="footer-bottom-inner">
+				    <div class="footer-bottom-copy">
+				        Copyright © 2022.
+    					<span class="sep"> | </span>Created by: 
+    					<a href="https://hanhtinhcongnghe.com/">
+    						 Hành Tinh Công Nghệ    					</a>
+				    </div>
+				    <div class="footer-bottom-protect">
+				        <a href="https://www.dmca.com/Protection/Status.aspx?id=fcdc189c-e471-471e-87fc-91cdb3241075&amp;refurl=https://hanhtinhcongnghe.com/phan-quyen-trong-laravel/#Buoc_8_tao_seeder_de_them_du_lieu_vao_bang" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src="./Phân quyền trong laravel với spatie laravel permission_files/dmca-badge-w100-2x1-01.png" alt="DMCA.com Protection Status"></a> <script src="./Phân quyền trong laravel với spatie laravel permission_files/DMCABadgeHelper.min.js"> </script>
+				    </div>
+					
+
+				</div>
+			</div>
+		</div>
+		<div class="back-to-top" id="back-to-top" title="Back to top" style="display: block;"><i class="fa fa-chevron-up"></i></div>
+	</footer><!-- #colophon -->
+	
+</div><!-- #page -->
+
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/jquery-3.6.0.min.js" id="hanhtinhcongnghe-jquery-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/navigation.js" id="hanhtinhcongnghe-navigation-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/sticky-sidebar.js" id="hanhtinhcongnghe-sidebar-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/jquery.validate.min.js" id="validate-jquery-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/jquery.comment.js" id="comment-jquery-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/comment-reply.min.js" id="comment-reply-js" async="" data-wp-strategy="async"></script>
+<script id="kk-star-ratings-js-extra">
+var kk_star_ratings = {"action":"kk-star-ratings","endpoint":"https:\/\/hanhtinhcongnghe.com\/wp-admin\/admin-ajax.php","nonce":"e853034039"};
+</script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/kk-star-ratings.min.js" id="kk-star-ratings-js"></script>
+<script id="ez-toc-scroll-scriptjs-js-extra">
+var eztoc_smooth_local = {"scroll_offset":"30","add_request_uri":""};
+</script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/js.cookie.min.js" id="ez-toc-js-cookie-js"></script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/jquery.sticky-kit.min.js" id="ez-toc-jquery-sticky-kit-js"></script>
+<script id="ez-toc-js-js-extra">
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"","scroll_offset":"30","fallbackIcon":"<span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle<\/span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"><\/path><\/svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"\/><\/svg><\/span><\/span>"};
+</script>
+<script src="./Phân quyền trong laravel với spatie laravel permission_files/front.min.js" id="ez-toc-js-js"></script>
+
+
+
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Phân quyền trong laravel với spatie laravel permission_files/ads(1).html" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins><iframe src="./Phân quyền trong laravel với spatie laravel permission_files/aframe.html" width="0" height="0" style="display: none;"></iframe><div id="gtx-trans" style="position: absolute; left: 188px; top: 13149px;"><div class="gtx-trans-icon"></div></div></body></html>

@@ -1,0 +1,27 @@
+.bg-gray{
+    background-color: #e4e4e4;;
+}
+.list-permision{
+    margin: 0px 15px 15px;
+    background: #6571ff0d;
+}
+.list-permision .nameCont{
+    margin: 15px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.list-permision .block label{
+    margin-left: 10px;
+}
+.list-permision .block div{
+    margin-bottom: 10px;
+}
+.color-main{
+    color: #6571ff;
+}
+.check_permissions_by_cont{
+    margin-left: 15px;
+}
+.badge{
+    margin: 10px 0px 0px;
+}
